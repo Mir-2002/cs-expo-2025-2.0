@@ -1,15 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Racing_Sans_One, Space_Mono, Stalinist_One } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const stalinistOne = Stalinist_One({
+  variable: "--font-stalinist-one",
   subsets: ["latin"],
+  weight: "400",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const racingSansOne = Racing_Sans_One({
+  variable: "--font-racing-sans-one",
   subsets: ["latin"],
+  weight: "400",
+});
+
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -25,8 +34,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${stalinistOne.variable} ${racingSansOne.variable} ${spaceMono.variable} antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
