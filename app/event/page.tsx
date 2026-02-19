@@ -1,6 +1,6 @@
 import Section from "@/components/ui/Section";
 import Image from "next/image";
-import DevDaysFrame from "@/components/DevDaysFrame";
+import DevDaysFrame from "./DevDaysFrame";
 
 function HeroSection() {
   return (
