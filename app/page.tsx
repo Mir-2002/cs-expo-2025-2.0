@@ -29,7 +29,9 @@ function HeroSection() {
 function DestinationSection() {
   return (
     <Section className="bg-[url('/images/backgrounds/EVENT_BG_2.jpg')] bg-cover bg-center flex flex-col items-center justify-center lg:h-screen lg:relative lg:justify-start">
-      <Link href="/event" className="text-3xl font-stalinist-one my-10">DESTINATION</Link>
+      <Link href="/event" className="text-3xl font-stalinist-one my-10">
+        DESTINATION
+      </Link>
       <div className="relative flex justify-center w-auto h-auto hover:scale-105 transition-transform duration-300 lg:absolute lg:left-10 lg:top-10">
         <Image
           src="/svg/dark-planet.svg"
@@ -37,7 +39,10 @@ function DestinationSection() {
           width={400}
           height={400}
         />
-        <Link href="/event" className="text-2xl font-racing-sans-one absolute translate-y-25 right-5">
+        <Link
+          href="/event"
+          className="text-2xl font-racing-sans-one absolute translate-y-25 right-5"
+        >
           EVENTS
         </Link>
       </div>
@@ -48,7 +53,10 @@ function DestinationSection() {
           width={400}
           height={400}
         />
-        <Link href="/gallery" className="text-2xl font-racing-sans-one absolute top-[60%] left-0">
+        <Link
+          href="/gallery"
+          className="text-2xl font-racing-sans-one absolute top-[60%] left-0"
+        >
           GALLERY
         </Link>
       </div>
@@ -59,7 +67,10 @@ function DestinationSection() {
           width={400}
           height={400}
         />
-        <Link href="/hall-of-fame" className="text-2xl font-racing-sans-one absolute top-[55%] left-10">
+        <Link
+          href="/hall-of-fame"
+          className="text-2xl font-racing-sans-one absolute top-[55%] left-10"
+        >
           HALL OF FAME
         </Link>
       </div>
@@ -70,18 +81,24 @@ function DestinationSection() {
           width={400}
           height={400}
         />
-        <Link href="/partners" className="text-2xl font-racing-sans-one absolute top-1/2 left-10">
+        <Link
+          href="/partners"
+          className="text-2xl font-racing-sans-one absolute top-1/2 left-10"
+        >
           PARTNERS
         </Link>
       </div>
-      <div className="relative flex justify-center w-auto h-auto hover:scale-105 transition-transform duration-300 lg:absolute lg:bottom-12 lg:right-10">
+      <div className="relative flex justify-center w-auto h-auto hover:scale-105 transition-transform duration-300 lg:absolute lg:bottom-5 lg:right-10">
         <Image
           src="/svg/moon.svg"
           alt="Earth-like Planet"
           width={400}
           height={400}
         />
-        <Link href="/about" className="text-2xl font-racing-sans-one absolute top-[63%] right-15">
+        <Link
+          href="/about"
+          className="text-2xl font-racing-sans-one absolute top-[63%] right-15"
+        >
           ABOUT
         </Link>
       </div>
@@ -92,7 +109,10 @@ function DestinationSection() {
           width={400}
           height={400}
         />
-        <Link href="/projects" className="text-2xl font-racing-sans-one absolute top-1/5 block">
+        <Link
+          href="/projects"
+          className="text-2xl font-racing-sans-one absolute top-1/5 block"
+        >
           PROJECTS
         </Link>
       </div>
