@@ -9,10 +9,15 @@
   --font-stalinist-one: "Stalinist One", cursive;
   --font-racing-sans-one: "Racing Sans One", sans-serif;
   --font-space-mono: "Space Mono", monospace;
+  --font-audiowide: "Audiowide", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
   --color-primary-blue: #3e516e;
   --color-secondary-blue: #879eb9;
   --color-primary-white: #c0c0c0;
   --color-primary-black: #0f1219;
+  --color-off-white: #e8e8e8;
+  --color-light-blue: #a8c5e0;
+  --color-dark-blue: #2a3a4e;
 }
 
 .font-geist-sans {
@@ -29,6 +34,67 @@
 }
 .font-space-mono {
   font-family: var(--font-space-mono);
+}
+.font-audiowide {
+  font-family: var(--font-audiowide);
+}
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.globe {
+  width: 320px;
+  height: 320px;
+  border-radius: 9999px;
+
+  /* Use an equirectangular map texture here */
+  background-image: url("/images/equirectangular-globe.jpg");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: 0 50%;
+
+  /* “Sphere” shading */
+  box-shadow: inset -30px 0 50px rgba(0, 0, 0, 0.55),
+    inset 20px 0 40px rgba(255, 255, 255, 0.08), 0 20px 60px rgba(0, 0, 0, 0.55);
+
+  /* Make it feel more 3D */
+  transform: translateZ(0);
+  position: relative;
+  overflow: hidden;
+
+  animation: globe-spin 14s linear infinite;
+}
+
+.globe::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+
+  /* Specular highlight */
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0) 55%
+  );
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+@keyframes globe-spin {
+  from {
+    background-position: 0 50%;
+  }
+  to {
+    background-position: -1000px 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .globe {
+    width: 380px;
+    height: 380px;
+  }
 }
 
 body {

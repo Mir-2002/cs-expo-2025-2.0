@@ -1,0 +1,86 @@
+[
+  {
+    "groupName": "AgriTech Pioneers",
+    "thesisTitle": "Smart Irrigation Scheduling Using Weather Forecasting",
+    "members": ["Member One", "Member Two", "Member Three"],
+    "mentor": "Prof. Jane Doe",
+    "category": "Agriculture",
+    "avp": "https://example.com/agri-1",
+    "images": [
+      "/sample picture(event)/sample1.jpg",
+      "/sample picture(event)/sample2.jpg"
+    ]
+  },
+  {
+    "groupName": "AgriSense",
+    "thesisTitle": "Plant Disease Detection on Edge Devices",
+    "members": ["Member A", "Member B"],
+    "mentor": "Prof. John Smith",
+    "category": "Agriculture",
+    "avp": "https://example.com/agri-2",
+    "images": [
+      "/sample picture(event)/sample3.jpg",
+      "/sample picture(event)/sample4.jpg"
+    ]
+  },
+  {
+    "groupName": "VisionCraft",
+    "thesisTitle": "Real-time PPE Detection for Construction Sites",
+    "members": ["Member V1", "Member V2", "Member V3"],
+    "mentor": "Engr. Alex Lee",
+    "category": "Computer Vision",
+    "avp": "https://example.com/cv-1",
+    "images": [
+      "/sample picture(event)/sample2.jpg",
+      "/sample picture(event)/sample3.jpg"
+    ]
+  },
+  {
+    "groupName": "SignSight",
+    "thesisTitle": "Filipino Sign Language Recognition via CNN-LSTM",
+    "members": ["Member C1", "Member C2"],
+    "mentor": "Prof. Maria Cruz",
+    "category": "Computer Vision",
+    "avp": "https://example.com/cv-2",
+    "images": [
+      "/sample picture(event)/sample1.jpg",
+      "/sample picture(event)/sample4.jpg"
+    ]
+  },
+  {
+    "groupName": "LinguaLink",
+    "thesisTitle": "Tagalog-English Code-Switching Detection",
+    "members": ["Member N1", "Member N2", "Member N3"],
+    "mentor": "Prof. Carla Reyes",
+    "category": "NLP",
+    "avp": "https://example.com/nlp-1",
+    "images": [
+      "/sample picture(event)/sample3.jpg",
+      "/sample picture(event)/sample2.jpg"
+    ]
+  },
+  {
+    "groupName": "EduNova",
+    "thesisTitle": "Adaptive Learning Paths Using Student Interaction Logs",
+    "members": ["Member E1", "Member E2"],
+    "mentor": "Prof. Dennis Tan",
+    "category": "Education",
+    "avp": "https://example.com/edu-1",
+    "images": [
+      "/sample picture(event)/sample4.jpg",
+      "/sample picture(event)/sample1.jpg"
+    ]
+  },
+  {
+    "groupName": "ModelMakers",
+    "thesisTitle": "Lightweight Image Classifiers for Mobile Deployment",
+    "members": ["Member M1", "Member M2", "Member M3"],
+    "mentor": "Prof. Hannah Lim",
+    "category": "Machine Learning",
+    "avp": "https://example.com/ml-1",
+    "images": [
+      "/sample picture(event)/sample2.jpg",
+      "/sample picture(event)/sample3.jpg"
+    ]
+  }
+]
