@@ -9,10 +9,14 @@
   --font-stalinist-one: "Stalinist One", cursive;
   --font-racing-sans-one: "Racing Sans One", sans-serif;
   --font-space-mono: "Space Mono", monospace;
+  --font-audiowide: "Audiowide", sans-serif;
   --color-primary-blue: #3e516e;
   --color-secondary-blue: #879eb9;
   --color-primary-white: #c0c0c0;
   --color-primary-black: #0f1219;
+  --color-off-white: #e8e8e8;
+  --color-light-blue: #a8c5e0;
+  --color-dark-blue: #2a3a4e;
 }
 
 .font-geist-sans {
@@ -29,6 +33,9 @@
 }
 .font-space-mono {
   font-family: var(--font-space-mono);
+}
+.font-audiowide {
+  font-family: var(--font-audiowide);
 }
 
 body {
