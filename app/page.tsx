@@ -194,7 +194,7 @@ function StellarShowcaseSection() {
     <Section className="relative bg-[url('/images/backgrounds/EVENT_BG_2.jpg')] bg-cover bg-center overflow-hidden">
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center py-20">
-        <h1 className="text-3xl font-stalinist-one mt-10 mb-20 w-1/2 text-center lg:w-full lg:text-4xl">
+        <h1 className="text-3xl font-stalinist-one mt-10 mb-20 w-full text-center lg:text-4xl">
           STELLAR SHOWCASE
         </h1>
 
@@ -225,7 +225,7 @@ function StellarShowcaseSection() {
           </div>
 
           {/*Categories*/}
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-4 mt-10">
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -236,17 +236,17 @@ function StellarShowcaseSection() {
                   setActiveThesis(next[0] ?? null);
                 }}
                 className={`group relative w-full max-w-md px-8 py-4 flex items-center justify-center
-                  bg-gradient-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40
+                  bg-linear-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40
                   border-2 border-blue-400/50 rounded-lg
                   hover:scale-105 hover:border-blue-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]
                   transition-all duration-300
                   ${
                     selectedCategory === cat
-                      ? "border-cyan-400 shadow-[0_0_25px_rgba(34,211,238,0.6)] bg-gradient-to-r from-blue-800/60 via-purple-800/60 to-blue-800/60"
+                      ? "border-cyan-400 shadow-[0_0_25px_rgba(34,211,238,0.6)] bg-linear-to-r from-blue-800/60 via-purple-800/60 to-blue-800/60"
                       : ""
                   }
-                  before:absolute before:inset-0 before:rounded-lg before:p-[2px] 
-                  before:bg-gradient-to-r before:from-blue-500/20 before:via-purple-500/20 before:to-blue-500/20
+                  before:absolute before:inset-0 before:rounded-lg before:p-0.5 
+                  before:bg-linear-to-r before:from-blue-500/20 before:via-purple-500/20 before:to-blue-500/20
                   before:-z-10 before:blur-sm`}
               >
                 <h1 className="font-stalinist-one text-lg text-white drop-shadow-[0_0_10px_rgba(59,130,246,0.8)] group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,1)]">
@@ -316,12 +316,12 @@ function StellarShowcaseSection() {
                   target="_blank"
                   rel="noreferrer"
                   className="group relative px-8 py-4 flex items-center justify-center
-                    bg-gradient-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40
+                    bg-linear-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40
                     border-2 border-blue-400/50 rounded-lg
                     hover:scale-105 hover:border-blue-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]
                     transition-all duration-300
-                    before:absolute before:inset-0 before:rounded-lg before:p-[2px] 
-                    before:bg-gradient-to-r before:from-blue-500/20 before:via-purple-500/20 before:to-blue-500/20
+                    before:absolute before:inset-0 before:rounded-lg before:p-0.5 
+                    before:bg-linear-to-r before:from-blue-500/20 before:via-purple-500/20 before:to-blue-500/20
                     before:-z-10 before:blur-sm"
                 >
                   <span className="font-stalinist-one text-base text-white drop-shadow-[0_0_10px_rgba(59,130,246,0.8)] group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,1)]">
@@ -331,7 +331,7 @@ function StellarShowcaseSection() {
               ) : (
                 <div
                   className="relative px-8 py-4 flex items-center justify-center opacity-50 cursor-not-allowed
-                  bg-gradient-to-r from-gray-800/40 via-gray-700/40 to-gray-800/40
+                  bg-linear-to-r from-gray-800/40 via-gray-700/40 to-gray-800/40
                   border-2 border-gray-500/30 rounded-lg"
                 >
                   <span className="font-stalinist-one text-base text-white/60">
@@ -386,12 +386,12 @@ function StellarShowcaseSection() {
                   target="_blank"
                   rel="noreferrer"
                   className="group relative px-8 py-4 flex items-center justify-center
-                    bg-gradient-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40
+                    bg-linear-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40
                     border-2 border-blue-400/50 rounded-lg
                     hover:scale-105 hover:border-blue-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]
                     transition-all duration-300
-                    before:absolute before:inset-0 before:rounded-lg before:p-[2px] 
-                    before:bg-gradient-to-r before:from-blue-500/20 before:via-purple-500/20 before:to-blue-500/20
+                    before:absolute before:inset-0 before:rounded-lg before:p-0.5 
+                    before:bg-linear-to-r before:from-blue-500/20 before:via-purple-500/20 before:to-blue-500/20
                     before:-z-10 before:blur-sm"
                 >
                   <span className="font-stalinist-one text-base text-white drop-shadow-[0_0_10px_rgba(59,130,246,0.8)] group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,1)]">
@@ -401,7 +401,7 @@ function StellarShowcaseSection() {
               ) : (
                 <div
                   className="relative px-8 py-4 flex items-center justify-center opacity-50 cursor-not-allowed
-                  bg-gradient-to-r from-gray-800/40 via-gray-700/40 to-gray-800/40
+                  bg-linear-to-r from-gray-800/40 via-gray-700/40 to-gray-800/40
                   border-2 border-gray-500/30 rounded-lg"
                 >
                   <span className="font-stalinist-one text-base text-white/60">
@@ -453,17 +453,17 @@ function StellarShowcaseSection() {
                     setActiveThesis(next[0] ?? null);
                   }}
                   className={`group relative px-6 py-3 flex items-center justify-center
-                    bg-gradient-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40
+                    bg-linear-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40
                     border-2 border-blue-400/50 rounded-lg
                     hover:scale-105 hover:border-blue-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]
                     transition-all duration-300
                     ${
                       selectedCategory === cat
-                        ? "border-cyan-400 shadow-[0_0_25px_rgba(34,211,238,0.6)] bg-gradient-to-r from-blue-800/60 via-purple-800/60 to-blue-800/60"
+                        ? "border-cyan-400 shadow-[0_0_25px_rgba(34,211,238,0.6)] bg-linear-to-r from-blue-800/60 via-purple-800/60 to-blue-800/60"
                         : ""
                     }
-                    before:absolute before:inset-0 before:rounded-lg before:p-[2px] 
-                    before:bg-gradient-to-r before:from-blue-500/20 before:via-purple-500/20 before:to-blue-500/20
+                    before:absolute before:inset-0 before:rounded-lg before:p-0.5 
+                    before:bg-linear-to-r before:from-blue-500/20 before:via-purple-500/20 before:to-blue-500/20
                     before:-z-10 before:blur-sm`}
                 >
                   <h1 className="font-stalinist-one text-sm text-white drop-shadow-[0_0_10px_rgba(59,130,246,0.8)] group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,1)]">
@@ -482,17 +482,17 @@ function StellarShowcaseSection() {
                   setActiveThesis(next[0] ?? null);
                 }}
                 className={`group relative px-6 py-3 flex items-center justify-center mx-auto
-                  bg-gradient-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40
+                  bg-linear-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40
                   border-2 border-blue-400/50 rounded-lg
                   hover:scale-105 hover:border-blue-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]
                   transition-all duration-300
                   ${
                     selectedCategory === categories[4]
-                      ? "border-cyan-400 shadow-[0_0_25px_rgba(34,211,238,0.6)] bg-gradient-to-r from-blue-800/60 via-purple-800/60 to-blue-800/60"
+                      ? "border-cyan-400 shadow-[0_0_25px_rgba(34,211,238,0.6)] bg-linear-to-r from-blue-800/60 via-purple-800/60 to-blue-800/60"
                       : ""
                   }
-                  before:absolute before:inset-0 before:rounded-lg before:p-[2px] 
-                  before:bg-gradient-to-r before:from-blue-500/20 before:via-purple-500/20 before:to-blue-500/20
+                  before:absolute before:inset-0 before:rounded-lg before:p-0.5 
+                  before:bg-linear-to-r before:from-blue-500/20 before:via-purple-500/20 before:to-blue-500/20
                   before:-z-10 before:blur-sm`}
               >
                 <h1 className="font-stalinist-one text-sm text-white drop-shadow-[0_0_10px_rgba(59,130,246,0.8)] group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,1)]">
