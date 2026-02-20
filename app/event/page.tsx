@@ -15,10 +15,10 @@ function HeroSection() {
           quality={95}
           sizes="100vw"
           className="object-cover object-center"
-          style={{ imageRendering: "high-quality" }}
+          style={{ imageRendering: "auto" }}
         />
       </div>
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-primary-black z-[1]" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-linear-to-b from-transparent to-primary-black z-1" />
 
       <h1 className="relative z-10 font-audiowide font-bold text-4xl lg:text-6xl xl:text-7xl tracking-wider text-off-white">
         EVENTS
@@ -30,7 +30,7 @@ function HeroSection() {
 function DevDaySection() {
   return (
     <Section className="relative flex flex-col items-center gap-10 overflow-hidden">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-t from-transparent to-primary-black z-10" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-linear-to-t from-transparent to-primary-black z-10" />
 
       <h1 className="relative z-10 font-audiowide font-bold text-3xl lg:text-4xl my-10 lg:my-16 tracking-wider text-off-white">
         Dev Day
@@ -38,7 +38,7 @@ function DevDaySection() {
 
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-8 mb-20">
         <div className="relative w-full lg:w-1/3">
-          <div className="relative w-full aspect-[3/4]">
+          <div className="relative w-full aspect-3/4">
             <DevDaysFrame>
               <div className="relative w-full h-full">
                 <Image
@@ -54,11 +54,11 @@ function DevDaySection() {
 
         <div className="relative flex-1">
           <p className="text-sm lg:text-base text-off-white leading-relaxed">
-            For the sum of the people over 20 for APR. Producing delivery, mainly
-            the men to you or second nothing never the important is createy
-            because you. The over how systems essential resources of the the
-            present creating, development and together, is always in thinking,
-            about.
+            For the sum of the people over 20 for APR. Producing delivery,
+            mainly the men to you or second nothing never the important is
+            createy because you. The over how systems essential resources of the
+            the present creating, development and together, is always in
+            thinking, about.
           </p>
         </div>
       </div>
@@ -96,7 +96,7 @@ function CSExpoSection() {
         </div>
 
         <div className="relative w-full lg:w-1/3">
-          <div className="relative w-full aspect-[3/4]">
+          <div className="relative w-full aspect-3/4">
             <DevDaysFrame>
               <div className="relative w-full h-full">
                 <Image
@@ -161,10 +161,10 @@ function SpeakersSection1() {
               height={320}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary-black/20" />
+            <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-primary-black/20" />
           </div>
 
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-light-blue/40 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent" />
         </div>
 
         <div
@@ -187,13 +187,13 @@ function SpeakersSection1() {
             }}
           />
 
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-light-blue/40 to-transparent mb-6" />
+          <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent mb-6" />
 
           <h2 className="font-audiowide text-xl lg:text-2xl text-light-blue mb-3 relative z-10">
             Elon Musk
           </h2>
 
-          <div className="h-px w-16 bg-gradient-to-r from-light-blue/60 to-transparent mb-4" />
+          <div className="h-px w-16 bg-linear-to-r from-light-blue/60 to-transparent mb-4" />
 
           <p className="font-audiowide text-sm lg:text-base text-dark-blue mb-6 uppercase tracking-wider relative z-10">
             Guest Speaker
@@ -206,7 +206,7 @@ function SpeakersSection1() {
             innovation, sustainability, and ambitious technological progress.
           </p>
 
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-light-blue/40 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent" />
         </div>
       </div>
     </Section>
@@ -259,10 +259,10 @@ function SpeakersSection2() {
               height={320}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary-black/20" />
+            <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-primary-black/20" />
           </div>
 
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-light-blue/40 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent" />
         </div>
 
         <div
@@ -285,26 +285,26 @@ function SpeakersSection2() {
             }}
           />
 
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-light-blue/40 to-transparent mb-6" />
+          <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent mb-6" />
 
           <h2 className="font-audiowide text-xl lg:text-2xl text-light-blue mb-3 relative z-10">
             Francis Leo Marcos
           </h2>
 
-          <div className="h-px w-16 bg-gradient-to-r from-light-blue/60 to-transparent mb-4" />
+          <div className="h-px w-16 bg-linear-to-r from-light-blue/60 to-transparent mb-4" />
 
           <p className="font-audiowide text-sm lg:text-base text-dark-blue mb-6 uppercase tracking-wider relative z-10">
             Guest Speaker
           </p>
 
           <p className="text-xs lg:text-sm text-off-white/90 leading-relaxed relative z-10">
-            Francis Leo &quot;Kulaong&quot; Marcos is recognized for his leadership and
-            public engagement initiatives, inspiring communities through
-            advocacy, communication, and social impact programs aimed at
+            Francis Leo &quot;Kulaong&quot; Marcos is recognized for his
+            leadership and public engagement initiatives, inspiring communities
+            through advocacy, communication, and social impact programs aimed at
             empowering people and encouraging positive change.
           </p>
 
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-light-blue/40 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent" />
         </div>
       </div>
     </Section>
