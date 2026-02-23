@@ -175,18 +175,15 @@ const glowByTier: Record<SponsorTier, string> = {
 
 const AUTO_ADVANCE_MS = 5000;
 const CARD_WIDTH = 320;
-const CARD_GAP = 32;
 
-type TransitionDir = "next" | "prev" | null;
+type SlideDirection = "next" | "prev" | null;
 
 export default function SponsorshipSection() {
   const [currentTier, setCurrentTier] = useState<SponsorTier>("co-presenter");
   const [activeIndex, setActiveIndex] = useState(0);
   const [selectedSponsor, setSelectedSponsor] = useState<typeof sponsorCards[SponsorTier][0] | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [transitionDirection, setTransitionDirection] = useState<TransitionDir>(null);
-  const [animating, setAnimating] = useState(false);
-  const prevActiveIndexRef = useRef(0);
+  const [slideDirection, setSlideDirection] = useState<SlideDirection>(null);
 
   const cards = sponsorCards[currentTier];
   const totalCards = cards.length;
@@ -195,16 +192,14 @@ export default function SponsorshipSection() {
   const glowStyle = glowByTier[currentTier];
 
   const goTo = useCallback(
-    (index: number, dir: TransitionDir) => {
+    (index: number, dir: SlideDirection) => {
       const clamped = ((index % totalCards) + totalCards) % totalCards;
       if (dir) {
-        prevActiveIndexRef.current = activeIndex;
-        setTransitionDirection(dir);
-        setAnimating(true);
+        setSlideDirection(dir);
       }
       setActiveIndex(clamped);
     },
-    [activeIndex, totalCards]
+    [totalCards]
   );
 
   const goPrev = useCallback(() => {
@@ -229,16 +224,6 @@ export default function SponsorshipSection() {
     }, AUTO_ADVANCE_MS);
     return () => clearInterval(timer);
   }, [goTo]);
-
-  // Clear transition state after slide animation finishes (parallax: exit 0.6s, enter 0.5s)
-  useEffect(() => {
-    if (!animating) return;
-    const t = setTimeout(() => {
-      setAnimating(false);
-      setTransitionDirection(null);
-    }, 650);
-    return () => clearTimeout(t);
-  }, [animating, activeIndex]);
 
   // Reset when tier changes
   useEffect(() => {
@@ -344,28 +329,6 @@ export default function SponsorshipSection() {
             // Calculate translateZ for subtle 3D depth effect
             const translateZ = isActive ? 0 : -absOffset * 20;
 
-            const isExiting =
-              animating &&
-              transitionDirection &&
-              cardIndex === prevActiveIndexRef.current &&
-              !isActive;
-
-            const enterClass =
-              isActive && animating && transitionDirection
-                ? transitionDirection === "next"
-                  ? "carousel-card-enter-next"
-                  : "carousel-card-enter-prev"
-                : "";
-
-            const exitClass =
-              isExiting && transitionDirection
-                ? transitionDirection === "next"
-                  ? "carousel-card-exit-next"
-                  : "carousel-card-exit-prev"
-                : "";
-
-            const innerClass = `flex flex-col items-center w-full ${enterClass} ${exitClass}`.trim();
-
             return (
               <div
                 key={`${currentTier}-${cardIndex}-offset-${displayOffset}`}
@@ -378,7 +341,16 @@ export default function SponsorshipSection() {
                 }}
                 onClick={() => handleCardClick(card)}
               >
-                <div className={innerClass} style={{ transformStyle: "preserve-3d" }}>
+                <div
+                  className={`flex flex-col items-center w-full ${
+                    isActive && slideDirection === "next"
+                      ? "carousel-slide-next"
+                      : isActive && slideDirection === "prev"
+                      ? "carousel-slide-prev"
+                      : ""
+                  }`}
+                  style={{ transformStyle: "preserve-3d" }}
+                >
                 {/* Card Container */}
                 <div
                   className={`relative w-full overflow-hidden rounded-xl border transition-all duration-500 ${borderClass} bg-white/5`}

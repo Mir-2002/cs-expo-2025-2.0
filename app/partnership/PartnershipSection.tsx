@@ -165,7 +165,7 @@ const glowByTier: Record<PartnerTier, string> = {
 const AUTO_ADVANCE_MS = 5000;
 const CARD_WIDTH = 320;
 
-type TransitionDir = "next" | "prev" | null;
+type SlideDirection = "next" | "prev" | null;
 
 export default function PartnershipSection() {
   const [currentTier, setCurrentTier] = useState<PartnerTier>("media-partners");
@@ -174,10 +174,7 @@ export default function PartnershipSection() {
     null
   );
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [transitionDirection, setTransitionDirection] =
-    useState<TransitionDir>(null);
-  const [animating, setAnimating] = useState(false);
-  const prevActiveIndexRef = useRef(0);
+  const [slideDirection, setSlideDirection] = useState<SlideDirection>(null);
 
   const cards = partnerCards[currentTier];
   const totalCards = cards.length;
@@ -186,16 +183,14 @@ export default function PartnershipSection() {
   const glowStyle = glowByTier[currentTier];
 
   const goTo = useCallback(
-    (index: number, dir: TransitionDir) => {
+    (index: number, dir: SlideDirection) => {
       const clamped = ((index % totalCards) + totalCards) % totalCards;
       if (dir) {
-        prevActiveIndexRef.current = activeIndex;
-        setTransitionDirection(dir);
-        setAnimating(true);
+        setSlideDirection(dir);
       }
       setActiveIndex(clamped);
     },
-    [activeIndex, totalCards]
+    [totalCards]
   );
 
   const goPrev = useCallback(() => {
@@ -219,15 +214,6 @@ export default function PartnershipSection() {
     }, AUTO_ADVANCE_MS);
     return () => clearInterval(timer);
   }, [goTo]);
-
-  useEffect(() => {
-    if (!animating) return;
-    const t = setTimeout(() => {
-      setAnimating(false);
-      setTransitionDirection(null);
-    }, 650);
-    return () => clearTimeout(t);
-  }, [animating, activeIndex]);
 
   useEffect(() => {
     setActiveIndex(0);
@@ -315,28 +301,6 @@ export default function PartnershipSection() {
             const rotateY = isActive ? 0 : displayOffset * 5;
             const translateZ = isActive ? 0 : -absOffset * 20;
 
-            const isExiting =
-              animating &&
-              transitionDirection &&
-              cardIndex === prevActiveIndexRef.current &&
-              !isActive;
-
-            const enterClass =
-              isActive && animating && transitionDirection
-                ? transitionDirection === "next"
-                  ? "carousel-card-enter-next"
-                  : "carousel-card-enter-prev"
-                : "";
-
-            const exitClass =
-              isExiting && transitionDirection
-                ? transitionDirection === "next"
-                  ? "carousel-card-exit-next"
-                  : "carousel-card-exit-prev"
-                : "";
-
-            const innerClass = `flex flex-col items-center w-full ${enterClass} ${exitClass}`.trim();
-
             return (
               <div
                 key={`${currentTier}-${cardIndex}-offset-${displayOffset}`}
@@ -350,7 +314,13 @@ export default function PartnershipSection() {
                 onClick={() => handleCardClick(card)}
               >
                 <div
-                  className={innerClass}
+                  className={`flex flex-col items-center w-full ${
+                    isActive && slideDirection === "next"
+                      ? "carousel-slide-next"
+                      : isActive && slideDirection === "prev"
+                      ? "carousel-slide-prev"
+                      : ""
+                  }`}
                   style={{ transformStyle: "preserve-3d" }}
                 >
                   <div
