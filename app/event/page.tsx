@@ -8,7 +8,7 @@ function HeroSection() {
       {/* High-quality background image using Next.js Image for sharp rendering */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/backgrounds/EVENT_BG.png"
+          src="/images/backgrounds/EVENTBG.jpg"
           alt=""
           fill
           priority
