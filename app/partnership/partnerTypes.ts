@@ -18,3 +18,4 @@ export type PartnerCard = {
 };
 
 export type PartnerCardsMap = Record<PartnerTier, PartnerCard[]>;
+ 
