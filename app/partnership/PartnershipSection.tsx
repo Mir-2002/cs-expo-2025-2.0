@@ -7,37 +7,46 @@ import SponsorModal from "./SponsorModal";
 import type { PartnerCard, PartnerCardsMap, PartnerTier } from "./partnerTypes";
 
 const partnerCards: PartnerCardsMap = {
-  "media-partners": [
+   "media-partners": [
     {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Media Partner",
+      src: "/partners_logo/media_partners/Gadgets_Magazine.png",
+      alt: "Gadgets Magazine",
       label: "MEDIA PARTNERS",
-      title: "Coming Soon",
-      name: "Coming Soon",
+      title: "Gadgets Magazine",
+      name: "Gadgets Magazine",
       description:
-        "This partnership slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
+        "Gadgets Magazine is a leading technology publication in the Philippines, providing insights into the latest gadgets, consumer electronics, and tech trends. Their mission is to inform and educate consumers about innovative technology products. Gadgets Magazine has been a trusted source for gadget enthusiasts, delivering news, reviews, and expert opinions on the latest technological innovations.",
+      websiteUrl: "https://www.gadgetsmagazine.com.ph/",
+      facebookUrl: "https://www.facebook.com/GadgetsMagazine",
+      isPlaceholder: false,
     },
     {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Media Partner",
+      src: "/partners_logo/media_partners/IKOTPH_logo_final22.png",
+      alt: "IKOTPH",
       label: "MEDIA PARTNERS",
-      title: "Coming Soon",
-      name: "Coming Soon",
+      title: "IKOTPH",
+      name: "IKOTPH",
       description:
-        "This partnership slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
+        "IKOTPH is a Filipino platform that connects and informs communities, businesses, and individuals through a wide range of media content. It covers everything from local news to events, trends, and digital services. IKOTPH is committed to empowering Filipinos by providing relevant content and creating a space where communities can engage and share knowledge.",
+      websiteUrl: "https://ikotph.com/",
+      facebookUrl: "https://www.facebook.com/ikotph/",
+      instagramUrl: "https://www.instagram.com/ikotph/",
+      isPlaceholder: false,
     },
     {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Media Partner",
+      src: "/partners_logo/media_partners/PinchLink.png",
+      alt: "PinchLink",
       label: "MEDIA PARTNERS",
-      title: "Coming Soon",
-      name: "Coming Soon",
+      title: "PinchLink",
+      name: "PinchLink",
       description:
-        "This partnership slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
+        "PinchLink is a popular online platform offering a diverse range of articles, features, and resources in technology and business. It connects professionals and enthusiasts, driving conversations in the tech industry. PinchLink is known for its insightful posts, expert opinions, and tech-related discussions that inspire and educate both budding entrepreneurs and seasoned professionals.",
+      websiteUrl: "https://pinchlinkmedia.com/?fbclid=IwY2xjawQL0b5leHRuA2FlbQIxMABicmlkETJ1WnV2RjJ2S0drMUtwTmNzc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHoq6ODEqXPMCFTmTwxtHM7WRDnojsMJM1e-Qa8THlPIjW6pIrE_wrGtJqkkX_aem_CzfEP0ZFGtx1u8EDa7RNWQ",
+      facebookUrl: "https://www.facebook.com/pinchlinkmedia",
+      instagramUrl: "https://www.instagram.com/pinchlinkmedia?fbclid=IwY2xjawQL0eVleHRuA2FlbQIxMABicmlkETJ1WnV2RjJ2S0drMUtwTmNzc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHrBKm1abmghS0RioLIgpHXHZagLVaGknYnv-0Ytf6T6x5xmBrvSWRXevdey0_aem_I1x0ZVGsI5hYnU7A4BnzDw",
+      isPlaceholder: false,
     },
+    
   ],
   "community-development": [
     {
@@ -221,7 +230,7 @@ export default function PartnershipSection() {
 
   return (
     <div className="relative z-10 w-full max-w-7xl mx-auto px-4 lg:px-8">
-      <h2 className="font-audiowide font-bold text-3xl lg:text-4xl text-center tracking-wider text-off-white">
+      <h2 className="font-audiowide font-bold text-3xl lg:text-4xl text-center tracking-wider text-off-white partnership-main-heading">
         PARTNERSHIP
       </h2>
       <div className="flex justify-center mt-6 mb-6">

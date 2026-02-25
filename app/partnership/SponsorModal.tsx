@@ -47,11 +47,14 @@ export default function SponsorModal({
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
+      document.body.classList.add("modal-open");
     } else {
-      document.body.style.overflow = "unset";
+      document.body.style.overflow = "auto";
+      document.body.classList.remove("modal-open");
     }
     return () => {
-      document.body.style.overflow = "unset";
+      document.body.style.overflow = "auto";
+      document.body.classList.remove("modal-open");
     };
   }, [isOpen]);
 
@@ -84,11 +87,11 @@ export default function SponsorModal({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4"
+      className="fixed inset-0 z-[9999] flex items-center justify-center p-4"
       style={{
-        background:
-          "radial-gradient(ellipse 100% 100% at 50% 50%, rgba(10,15,30,0.4) 0%, rgba(5,8,18,0.55) 100%)",
-        backdropFilter: "blur(10px) saturate(1.2)",
+        // Semi-transparent dark backdrop that covers the whole screen and softly blurs background
+        background: "rgba(0, 0, 0, 0.6)",
+        backdropFilter: "blur(6px) saturate(1.1)",
         opacity: isVisible ? 1 : 0,
         pointerEvents: shouldRender ? "auto" : "none",
         transition: "opacity 0.25s ease-out",
@@ -96,12 +99,13 @@ export default function SponsorModal({
       onClick={handleClose}
     >
       <div
-        className={`relative w-full ${MODAL_WIDTH} ${MODAL_MIN_H} ${MODAL_MAX_H} flex flex-col rounded-2xl overflow-hidden backdrop-blur-xl backdrop-saturate-150`}
+        className={`relative z-[10000] w-full ${MODAL_WIDTH} ${MODAL_MIN_H} ${MODAL_MAX_H} flex flex-col rounded-2xl overflow-hidden backdrop-blur-xl backdrop-saturate-150`}
         style={{
           transform: isVisible ? "scale(1)" : "scale(0.94)",
+          transformOrigin: "center",
           transition: "transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1)",
-          background:
-            "linear-gradient(145deg, rgba(15,20,35,0.32) 0%, rgba(25,35,55,0.22) 30%, rgba(40,55,90,0.18) 50%, rgba(25,35,55,0.22) 70%, rgba(15,20,35,0.32) 100%)",
+          // Solid modal body so page content never shows through
+          backgroundColor: "#050812",
           border: "1px solid rgba(168,197,224,0.4)",
           boxShadow:
             "0 25px 80px rgba(0,0,0,0.35), 0 0 80px rgba(100,150,220,0.06), 0 0 120px rgba(168,197,224,0.04), inset 0 1px 0 rgba(255,255,255,0.08), inset 0 0 80px rgba(100,130,180,0.03)",

@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="w-full lg:w-3/4 lg:gap-x-20 h-16 flex flex-row items-center justify-between bg-black/40 backdrop-blur-sm fixed top-0 left-1/2 -translate-x-1/2 z-50 px-4 lg:px-8 lg:rounded-lg">
+      <nav className="w-full lg:w-3/4 lg:gap-x-20 h-16 flex flex-row items-center justify-between bg-black/40 backdrop-blur-sm fixed top-0 left-1/2 -translate-x-1/2 z-[10001] px-4 lg:px-8 lg:rounded-lg">
         {/* Logo */}
         <Link
           href="/"
