@@ -42,19 +42,21 @@ function DestinationSection() {
       <h1 className="text-3xl font-stalinist-one my-10 lg:text-4xl">
         DESTINATION
       </h1>
-      <div className="relative flex justify-center w-auto h-auto hover:scale-105 transition-transform duration-300 lg:absolute lg:left-10 lg:top-10">
+
+      <Link
+        href="/event"
+        className="relative flex justify-center w-auto h-auto hover:scale-105 transition-transform duration-300 lg:absolute lg:left-10 lg:top-10"
+        aria-label="Go to Events"
+      >
         <Image
           src="/svg/dark-planet.svg"
           alt="Dark Planet"
           width={400}
           height={400}
         />
-        <Link
-          href="/event"
-          className="text-2xl font-racing-sans-one absolute translate-y-25 right-5"
-        >
+        <span className="text-2xl font-racing-sans-one absolute translate-y-25 right-5">
           EVENTS
-        </Link>
+        </span>
         <Image
           src="/svg/star.svg"
           alt="Star"
@@ -62,20 +64,22 @@ function DestinationSection() {
           height={100}
           className="absolute top-10 right-1/2 animate-pulse"
         />
-      </div>
-      <div className="relative flex justify-center w-auto h-auto hover:scale-105 transition-transform duration-300 lg:absolute lg:top-10">
+      </Link>
+
+      <Link
+        href="/gallery"
+        className="relative flex justify-center w-auto h-auto hover:scale-105 transition-transform duration-300 lg:absolute lg:top-10"
+        aria-label="Go to Gallery"
+      >
         <Image
           src="/svg/ringed-planet.svg"
           alt="Ringed Planet"
           width={400}
           height={400}
         />
-        <Link
-          href="/gallery"
-          className="text-2xl font-racing-sans-one absolute top-[60%] left-0"
-        >
+        <span className="text-2xl font-racing-sans-one absolute top-[60%] left-0">
           GALLERY
-        </Link>
+        </span>
         <Image
           src="/svg/star.svg"
           alt="Star"
@@ -83,20 +87,22 @@ function DestinationSection() {
           height={100}
           className="absolute bottom-10 right-1/2 animate-pulse"
         />
-      </div>
-      <div className="relative flex justify-center w-auto h-auto hover:scale-105 transition-transform duration-300 lg:absolute lg:top-20 lg:right-10">
+      </Link>
+
+      <Link
+        href="/hall-of-fame"
+        className="relative flex justify-center w-auto h-auto hover:scale-105 transition-transform duration-300 lg:absolute lg:top-20 lg:right-10"
+        aria-label="Go to Hall of Fame"
+      >
         <Image
           src="/svg/purple-planet.svg"
           alt="Earth-like Planet"
           width={400}
           height={400}
         />
-        <Link
-          href="/hall-of-fame"
-          className="text-2xl font-racing-sans-one absolute top-[55%] left-10"
-        >
+        <span className="text-2xl font-racing-sans-one absolute top-[55%] left-10">
           HALL OF FAME
-        </Link>
+        </span>
         <Image
           src="/svg/star.svg"
           alt="Star"
@@ -104,20 +110,22 @@ function DestinationSection() {
           height={100}
           className="absolute top-22 right-1/2 animate-pulse"
         />
-      </div>
-      <div className="relative flex justify-center w-auto h-auto hover:scale-105 transition-transform duration-300 lg:absolute lg:bottom-10 lg:left-10">
+      </Link>
+
+      <Link
+        href="/partnership"
+        className="relative flex justify-center w-auto h-auto hover:scale-105 transition-transform duration-300 lg:absolute lg:bottom-10 lg:left-10"
+        aria-label="Go to Partners"
+      >
         <Image
           src="/svg/spaceship.svg"
           alt="Earth-like Planet"
           width={400}
           height={400}
         />
-        <Link
-          href="/partners"
-          className="text-2xl font-racing-sans-one absolute top-1/2 left-10"
-        >
+        <span className="text-2xl font-racing-sans-one absolute top-1/2 left-10">
           PARTNERS
-        </Link>
+        </span>
         <Image
           src="/svg/star.svg"
           alt="Star"
@@ -125,20 +133,22 @@ function DestinationSection() {
           height={100}
           className="absolute top-10 left-1/2 animate-pulse"
         />
-      </div>
-      <div className="relative flex justify-center w-auto h-auto hover:scale-105 transition-transform duration-300 lg:absolute lg:bottom-5 lg:right-10">
+      </Link>
+
+      <Link
+        href="/about"
+        className="relative flex justify-center w-auto h-auto hover:scale-105 transition-transform duration-300 lg:absolute lg:bottom-5 lg:right-10"
+        aria-label="Go to About"
+      >
         <Image
           src="/svg/moon.svg"
           alt="Earth-like Planet"
           width={400}
           height={400}
         />
-        <Link
-          href="/about"
-          className="text-2xl font-racing-sans-one absolute top-[63%] right-15"
-        >
+        <span className="text-2xl font-racing-sans-one absolute top-[63%] right-15">
           ABOUT
-        </Link>
+        </span>
         <Image
           src="/svg/star.svg"
           alt="Star"
@@ -146,21 +156,23 @@ function DestinationSection() {
           height={100}
           className="absolute bottom-10 right-1/2 animate-pulse"
         />
-      </div>
-      <div className="relative flex justify-center w-auto h-auto hover:scale-105 transition-transform duration-300 lg:absolute lg:bottom-0">
+      </Link>
+
+      <Link
+        href="/projects"
+        className="relative flex justify-center w-auto h-auto hover:scale-105 transition-transform duration-300 lg:absolute lg:bottom-0"
+        aria-label="Go to Projects"
+      >
         <Image
           src="/svg/earth.svg"
           alt="Earth-like Planet"
           width={400}
           height={400}
         />
-        <Link
-          href="/projects"
-          className="text-2xl font-racing-sans-one absolute top-1/5 block"
-        >
+        <span className="text-2xl font-racing-sans-one absolute top-1/5 block">
           PROJECTS
-        </Link>
-      </div>
+        </span>
+      </Link>
 
       <div className="absolute bottom-0 h-16 w-full bg-linear-to-t from-black to-transparent" />
     </Section>
@@ -201,10 +213,10 @@ function StellarShowcaseSection() {
         {/* Mobile Layout (vertical stack) */}
         <div className="relative flex flex-col items-center justify-center lg:hidden">
           {/* Globe + attached glow wrapper */}
-          <div className="relative flex items-center justify-center w-85 h-85">
+          <div className="relative flex items-center justify-center w-[340px] h-[340px]">
             {/* Glow: always centered behind the globe */}
             <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-              <div className="h-105 w-105 rounded-full blur-3xl bg-blue-900/30" />
+              <div className="h-[420px] w-[420px] rounded-full blur-3xl bg-blue-900/30" />
             </div>
 
             {/* Globe */}
@@ -310,11 +322,11 @@ function StellarShowcaseSection() {
 
             {/* More Details button (below card) */}
             <div className="mt-20">
-              {activeThesis?.avp ? (
-                <a
-                  href={activeThesis.avp}
-                  target="_blank"
-                  rel="noreferrer"
+              {activeThesis ? (
+                <Link
+                  href={`/projects/${encodeURIComponent(
+                    activeThesis.groupName
+                  )}`}
                   className="group relative px-8 py-4 flex items-center justify-center
                     bg-linear-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40
                     border-2 border-blue-400/50 rounded-lg
@@ -327,7 +339,7 @@ function StellarShowcaseSection() {
                   <span className="font-stalinist-one text-base text-white drop-shadow-[0_0_10px_rgba(59,130,246,0.8)] group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,1)]">
                     More Details
                   </span>
-                </a>
+                </Link>
               ) : (
                 <div
                   className="relative px-8 py-4 flex items-center justify-center opacity-50 cursor-not-allowed
@@ -380,11 +392,11 @@ function StellarShowcaseSection() {
 
             {/* More Details button (below card) */}
             <div className="mt-20">
-              {activeThesis?.avp ? (
-                <a
-                  href={activeThesis.avp}
-                  target="_blank"
-                  rel="noreferrer"
+              {activeThesis ? (
+                <Link
+                  href={`/projects/${encodeURIComponent(
+                    activeThesis.groupName
+                  )}`}
                   className="group relative px-8 py-4 flex items-center justify-center
                     bg-linear-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40
                     border-2 border-blue-400/50 rounded-lg
@@ -397,7 +409,7 @@ function StellarShowcaseSection() {
                   <span className="font-stalinist-one text-base text-white drop-shadow-[0_0_10px_rgba(59,130,246,0.8)] group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,1)]">
                     More Details
                   </span>
-                </a>
+                </Link>
               ) : (
                 <div
                   className="relative px-8 py-4 flex items-center justify-center opacity-50 cursor-not-allowed
@@ -415,10 +427,10 @@ function StellarShowcaseSection() {
           {/* CENTER: Globe + Ring */}
           <div className="flex flex-col items-center">
             {/* Globe + attached glow wrapper */}
-            <div className="relative flex items-center justify-center w-95 h-95">
+            <div className="relative flex items-center justify-center w-[380px] h-[380px]">
               {/* Glow: always centered behind the globe */}
               <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                <div className="h-105 w-105 rounded-full blur-3xl bg-blue-900/30" />
+                <div className="h-[420px] w-[420px] rounded-full blur-3xl bg-blue-900/30" />
               </div>
 
               {/* Globe */}

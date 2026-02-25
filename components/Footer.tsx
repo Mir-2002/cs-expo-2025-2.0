@@ -40,7 +40,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/partners"
+                href="/partnership"
                 className="hover:text-dark-blue transition-colors duration-150"
               >
                 Partners
