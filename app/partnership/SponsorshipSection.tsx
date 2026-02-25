@@ -9,14 +9,14 @@ import type { SponsorCard, SponsorCardsMap } from "./sponsorTypes";
 const sponsorCards: SponsorCardsMap = {
   "co-presenter": [
     {
-      src: "/sponsor_logo/relx.png",
+      src: "/sponsor_logo/Co-Presenter/relx.png",
       alt: "RELX | Reed Elsevier Philippines",
       label: "CO-PRESENTER",
       title: "RELX | Reed Elsevier Philippines",
       name: "RELX | Reed Elsevier Philippines",
-      description: `RELX | Reed Elsevier Philippines is a global company that creates innovative digital tools, data solutions, and research platforms used by students, professionals, and organizations around the world. Our work helps improve scientific discoveries, support better healthcare, strengthen legal research, and enhance business decision‑making.
+      description: `RELX | Reed Elsevier Philippines is a global company that creates innovative digital tools, data solutions, and research platforms used by students, professionals, and organizations around the world. Our work helps improve scientific discoveries, support better healthcare, strengthen legal research, and enhance business decision-making.
 
-Here in the Philippines, our teams work in technology, data analytics, content creation, operations, and customer support. We collaborate with colleagues across the globe to build products and solutions that make learning, researching, and problem‑solving easier and more effective.
+Here in the Philippines, our teams work in technology, data analytics, content creation, operations, and customer support. We collaborate with colleagues across the globe to build products and solutions that make learning, researching, and problem-solving easier and more effective.
 
 At RELX | Reed Elsevier Philippines, we value curiosity, innovation, teamwork, and continuous learning. We strive to create an environment where students and young professionals can gain skills, build confidence, and start shaping their future careers.`,
       websiteUrl: "https://www.reedelsevier.com.ph/",
@@ -30,7 +30,8 @@ At RELX | Reed Elsevier Philippines, we value curiosity, innovation, teamwork, a
       label: "CO-PRESENTER",
       title: "Coming Soon",
       name: "Coming Soon",
-      description: "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
+      description:
+        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
       isPlaceholder: true,
     },
     {
@@ -39,10 +40,12 @@ At RELX | Reed Elsevier Philippines, we value curiosity, innovation, teamwork, a
       label: "CO-PRESENTER",
       title: "Coming Soon",
       name: "Coming Soon",
-      description: "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
+      description:
+        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
       isPlaceholder: true,
     },
   ],
+
   platinum: [
     {
       src: "/sponsor_logo/sponsor_sample.png",
@@ -50,7 +53,8 @@ At RELX | Reed Elsevier Philippines, we value curiosity, innovation, teamwork, a
       label: "PLATINUM",
       title: "Coming Soon",
       name: "Coming Soon",
-      description: "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
+      description:
+        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
       isPlaceholder: true,
     },
     {
@@ -59,7 +63,8 @@ At RELX | Reed Elsevier Philippines, we value curiosity, innovation, teamwork, a
       label: "PLATINUM",
       title: "Coming Soon",
       name: "Coming Soon",
-      description: "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
+      description:
+        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
       isPlaceholder: true,
     },
     {
@@ -68,7 +73,8 @@ At RELX | Reed Elsevier Philippines, we value curiosity, innovation, teamwork, a
       label: "PLATINUM",
       title: "Coming Soon",
       name: "Coming Soon",
-      description: "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
+      description:
+        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
       isPlaceholder: true,
     },
     {
@@ -77,10 +83,12 @@ At RELX | Reed Elsevier Philippines, we value curiosity, innovation, teamwork, a
       label: "PLATINUM",
       title: "Coming Soon",
       name: "Coming Soon",
-      description: "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
+      description:
+        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
       isPlaceholder: true,
     },
   ],
+
   gold: [
     {
       src: "/sponsor_logo/sponsor_sample.png",
@@ -88,7 +96,8 @@ At RELX | Reed Elsevier Philippines, we value curiosity, innovation, teamwork, a
       label: "GOLD",
       title: "Coming Soon",
       name: "Coming Soon",
-      description: "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
+      description:
+        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
       isPlaceholder: true,
     },
     {
@@ -97,7 +106,8 @@ At RELX | Reed Elsevier Philippines, we value curiosity, innovation, teamwork, a
       label: "GOLD",
       title: "Coming Soon",
       name: "Coming Soon",
-      description: "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
+      description:
+        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
       isPlaceholder: true,
     },
     {
@@ -106,7 +116,8 @@ At RELX | Reed Elsevier Philippines, we value curiosity, innovation, teamwork, a
       label: "GOLD",
       title: "Coming Soon",
       name: "Coming Soon",
-      description: "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
+      description:
+        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
       isPlaceholder: true,
     },
     {
@@ -115,37 +126,72 @@ At RELX | Reed Elsevier Philippines, we value curiosity, innovation, teamwork, a
       label: "GOLD",
       title: "Coming Soon",
       name: "Coming Soon",
-      description: "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
+      description:
+        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
       isPlaceholder: true,
     },
   ],
+
   bronze: [
     {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Bronze Sponsor",
+      src: "/sponsor_logo/Bronze/Dairy_Queen_Trinoma.jpg",
+      alt: "Dairy Queen Trinoma",
       label: "BRONZE",
-      title: "Coming Soon",
-      name: "Coming Soon",
-      description: "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
+      title: "Dairy Queen Trinoma",
+      name: "Dairy Queen Trinoma",
+      description:
+        "Dairy Queen is a well-known dessert and food brand in the Philippines, offering signature soft-serve treats, Blizzard creations, and quick bites. This sponsor card represents their Trinoma branch.",
+      websiteUrl: "http://dairyqueen.com.ph/",
+      facebookUrl: "https://www.facebook.com/dairyqueenphilippines/",
+      instagramUrl: "https://www.instagram.com/dairyqueenphils/",
+      isPlaceholder: false,
     },
     {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Bronze Sponsor",
+      src: "/sponsor_logo/Bronze/District_Takoyaki.jpg",
+      alt: "District Takoyaki",
       label: "BRONZE",
-      title: "Coming Soon",
-      name: "Coming Soon",
-      description: "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
+      title: "District Takoyaki",
+      name: "District Takoyaki",
+      description:
+        "District Takoyaki is a takoyaki food business that accepts event bookings and serves Japanese-inspired street food.",
+      facebookUrl: "https://www.facebook.com/61557970280846",
+      isPlaceholder: false,
     },
     {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Bronze Sponsor",
+      src: "/sponsor_logo/Bronze/Genos_ Food_Hub.png",
+      alt: "Genos' Food Hub",
       label: "BRONZE",
-      title: "Coming Soon",
-      name: "Coming Soon",
-      description: "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
+      title: "Genos' Food Hub",
+      name: "Genos' Food Hub",
+      description:
+        "Genos' Food Hub offers a mix of comfort and snack items such as pasta, pizza, sushi, and more, and is active in campus and event booth sponsorships.",
+      facebookUrl: "https://www.facebook.com/GenosPastaHub/",
+      isPlaceholder: false,
+    },
+    {
+      src: "/sponsor_logo/Bronze/Kusina_ni_Rosa_Logo.jpg",
+      alt: "Kusina Ni Rosa",
+      label: "BRONZE",
+      title: "Kusina Ni Rosa",
+      name: "Kusina Ni Rosa",
+      description:
+        "Kusina Ni Rosa is a local food brand focused on lutong bahay and event food offerings, with active Facebook and Instagram pages.",
+      facebookUrl: "https://www.facebook.com/kusina.nirosa.7/",
+      instagramUrl: "https://www.instagram.com/kusinanirosa/",
+      isPlaceholder: false,
+    },
+    {
+      src: "/sponsor_logo/Bronze/Tiny_Treasures_Club.png",
+      alt: "Tiny Treasures Club",
+      label: "BRONZE",
+      title: "Tiny Treasures Club",
+      name: "Tiny Treasures Club",
+      description:
+        "Tiny Treasures Club is an anik-anik event booth brand that joins campus events and sells plushies, keychains, and collectible items.",
+      facebookUrl:
+        "https://www.facebook.com/p/Tiny-Treasures-Club-61556139826508/",
+      instagramUrl: "https://www.instagram.com/tinytreasures.club/",
+      isPlaceholder: false,
     },
   ],
 };
@@ -181,7 +227,9 @@ type SlideDirection = "next" | "prev" | null;
 export default function SponsorshipSection() {
   const [currentTier, setCurrentTier] = useState<SponsorTier>("co-presenter");
   const [activeIndex, setActiveIndex] = useState(0);
-  const [selectedSponsor, setSelectedSponsor] = useState<typeof sponsorCards[SponsorTier][0] | null>(null);
+  const [selectedSponsor, setSelectedSponsor] = useState<SponsorCard | null>(
+    null
+  );
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [slideDirection, setSlideDirection] = useState<SlideDirection>(null);
 
@@ -194,9 +242,7 @@ export default function SponsorshipSection() {
   const goTo = useCallback(
     (index: number, dir: SlideDirection) => {
       const clamped = ((index % totalCards) + totalCards) % totalCards;
-      if (dir) {
-        setSlideDirection(dir);
-      }
+      if (dir) setSlideDirection(dir);
       setActiveIndex(clamped);
     },
     [totalCards]
@@ -210,22 +256,22 @@ export default function SponsorshipSection() {
     goTo(activeIndex + 1, "next");
   }, [activeIndex, goTo]);
 
-  const handleCardClick = (sponsor: typeof sponsorCards[SponsorTier][0]) => {
+  const handleCardClick = (sponsor: SponsorCard) => {
     setSelectedSponsor(sponsor);
     setIsModalOpen(true);
   };
 
-  // Auto-advance every 5 seconds
   const activeIndexRef = useRef(activeIndex);
   activeIndexRef.current = activeIndex;
+
   useEffect(() => {
     const timer = setInterval(() => {
       goTo(activeIndexRef.current + 1, "next");
     }, AUTO_ADVANCE_MS);
+
     return () => clearInterval(timer);
   }, [goTo]);
 
-  // Reset when tier changes
   useEffect(() => {
     setActiveIndex(0);
   }, [currentTier]);
@@ -235,13 +281,15 @@ export default function SponsorshipSection() {
       <h2 className="font-audiowide font-bold text-3xl lg:text-4xl text-center tracking-wider text-off-white">
         SPONSORSHIP
       </h2>
+
       <div className="flex justify-center mt-6 mb-6">
-        <SponsorSorter initialTier="co-presenter" onTierChange={setCurrentTier} />
+        <SponsorSorter
+          initialTier="co-presenter"
+          onTierChange={setCurrentTier}
+        />
       </div>
 
-      {/* Carousel with seamless navigation zones */}
       <div className="relative w-full">
-        {/* Left Navigation Zone - seamless side panel */}
         <button
           type="button"
           onClick={goPrev}
@@ -255,7 +303,6 @@ export default function SponsorshipSection() {
             e.currentTarget.style.background = "transparent";
           }}
         >
-          {/* Subtle orb indicator */}
           <div
             className="absolute left-8 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full transition-all duration-500 opacity-0 group-hover:opacity-100"
             style={{
@@ -265,8 +312,7 @@ export default function SponsorshipSection() {
             }}
           />
         </button>
-        
-        {/* Right Navigation Zone - seamless side panel */}
+
         <button
           type="button"
           onClick={goNext}
@@ -280,7 +326,6 @@ export default function SponsorshipSection() {
             e.currentTarget.style.background = "transparent";
           }}
         >
-          {/* Subtle orb indicator */}
           <div
             className="absolute right-8 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full transition-all duration-500 opacity-0 group-hover:opacity-100"
             style={{
@@ -291,42 +336,28 @@ export default function SponsorshipSection() {
           />
         </button>
 
-        {/* Stacked Deck Carousel with Infinite Loop */}
         <div
           className="relative flex items-center justify-center py-10 overflow-hidden"
-          style={{ 
-            height: "500px", 
+          style={{
+            height: "500px",
             perspective: "1500px",
             minHeight: "500px",
           }}
         >
-          {/* Render cards with infinite loop - show cards around activeIndex */}
           {[-2, -1, 0, 1, 2].map((displayOffset) => {
-            // Calculate which card index to show at this position (with wraparound for infinite loop)
-            const cardIndex = ((activeIndex + displayOffset) % totalCards + totalCards) % totalCards;
+            const cardIndex =
+              ((activeIndex + displayOffset) % totalCards + totalCards) %
+              totalCards;
             const card = cards[cardIndex];
             const isActive = displayOffset === 0;
             const absOffset = Math.abs(displayOffset);
-            
-            // Calculate scale - active card is largest, others scale down gently
+
             const scale = isActive ? 1 : Math.max(0.85, 1 - absOffset * 0.08);
-            
-            // Calculate z-index - active card is front, others behind
             const zIndex = isActive ? 20 : 10 - absOffset;
-            
-            // Calculate opacity - back cards are more visible
             const opacity = isActive ? 1 : Math.max(0.7, 1 - absOffset * 0.1);
-            
-            // Calculate translateX - cards spread out horizontally with generous spacing
             const translateX = displayOffset * 200;
-            
-            // Calculate translateY - slight vertical offset for back cards (deck effect)
             const translateY = isActive ? 0 : absOffset * 8;
-            
-            // Calculate rotation - subtle fan effect for back cards
             const rotateY = isActive ? 0 : displayOffset * 5;
-            
-            // Calculate translateZ for subtle 3D depth effect
             const translateZ = isActive ? 0 : -absOffset * 20;
 
             return (
@@ -351,55 +382,51 @@ export default function SponsorshipSection() {
                   }`}
                   style={{ transformStyle: "preserve-3d" }}
                 >
-                {/* Card Container */}
-                <div
-                  className={`relative w-full overflow-hidden rounded-xl border transition-all duration-500 ${borderClass} bg-white/5`}
-                  style={{
-                    width: CARD_WIDTH,
-                    height: "400px",
-                    boxShadow: isActive
-                      ? `${glowStyle}, 0 25px 50px rgba(0,0,0,0.5)`
-                      : "0 10px 30px rgba(0,0,0,0.4)",
-                  }}
-                  onMouseEnter={(e) => {
-                    if (!isActive) {
-                      e.currentTarget.style.transform = "translateY(-10px) scale(1.02)";
-                    } else {
-                      e.currentTarget.style.transform = "translateY(-20px) scale(1.05)";
-                    }
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = "translateY(0) scale(1)";
-                  }}
-                >
-                  <Image
-                    src={card.src}
-                    alt={card.alt}
-                    fill
-                    className="object-contain p-6 transition-transform duration-700 group-hover:scale-105"
-                    sizes="320px"
-                  />
                   <div
-                    className="absolute inset-0 pointer-events-none"
+                    className={`relative w-full overflow-hidden rounded-xl border transition-all duration-500 ${borderClass} bg-white/5`}
                     style={{
-                      background:
-                        "linear-gradient(180deg, transparent 60%, rgba(15,18,25,0.4) 100%)",
+                      width: CARD_WIDTH,
+                      height: "400px",
+                      boxShadow: isActive
+                        ? `${glowStyle}, 0 25px 50px rgba(0,0,0,0.5)`
+                        : "0 10px 30px rgba(0,0,0,0.4)",
                     }}
-                  />
-                </div>
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = isActive
+                        ? "translateY(-20px) scale(1.05)"
+                        : "translateY(-10px) scale(1.02)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = "translateY(0) scale(1)";
+                    }}
+                  >
+                    <Image
+                      src={card.src}
+                      alt={card.alt}
+                      fill
+                      className="object-contain p-6 transition-transform duration-700 group-hover:scale-105"
+                      sizes="320px"
+                    />
+                    <div
+                      className="absolute inset-0 pointer-events-none"
+                      style={{
+                        background:
+                          "linear-gradient(180deg, transparent 60%, rgba(15,18,25,0.4) 100%)",
+                      }}
+                    />
+                  </div>
 
-                {/* Sponsor name */}
-                <p
-                  className={`mt-4 font-poppins text-sm font-medium tracking-wider text-center max-w-[280px] line-clamp-2 transition-all duration-300 ${labelColor}`}
-                  style={{
-                    textShadow: isActive
-                      ? "0 0 20px rgba(168,197,224,0.3)"
-                      : "none",
-                    opacity: isActive ? 1 : 0.7,
-                  }}
-                >
-                  {card.name}
-                </p>
+                  <p
+                    className={`mt-4 font-poppins text-sm font-medium tracking-wider text-center max-w-[280px] line-clamp-2 transition-all duration-300 ${labelColor}`}
+                    style={{
+                      textShadow: isActive
+                        ? "0 0 20px rgba(168,197,224,0.3)"
+                        : "none",
+                      opacity: isActive ? 1 : 0.7,
+                    }}
+                  >
+                    {card.name}
+                  </p>
                 </div>
               </div>
             );
@@ -407,7 +434,6 @@ export default function SponsorshipSection() {
         </div>
       </div>
 
-      {/* Sponsor Modal */}
       <SponsorModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
@@ -416,4 +442,3 @@ export default function SponsorshipSection() {
     </div>
   );
 }
- 

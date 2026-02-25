@@ -47,17 +47,14 @@
   height: 320px;
   border-radius: 9999px;
 
-  /* Use an equirectangular map texture here */
   background-image: url("/images/equirectangular-globe.jpg");
   background-size: cover;
   background-repeat: repeat-x;
   background-position: 0 50%;
 
-  /* “Sphere” shading */
   box-shadow: inset -30px 0 50px rgba(0, 0, 0, 0.55),
     inset 20px 0 40px rgba(255, 255, 255, 0.08), 0 20px 60px rgba(0, 0, 0, 0.55);
 
-  /* Make it feel more 3D */
   transform: translateZ(0);
   position: relative;
   overflow: hidden;
@@ -71,7 +68,6 @@
   inset: 0;
   border-radius: 9999px;
 
-  /* Specular highlight */
   background: radial-gradient(
     circle at 30% 30%,
     rgba(255, 255, 255, 0.2),
@@ -103,7 +99,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Simple slide-in animation for active carousel cards (no blur) */
+/* Simple slide-in animation for active carousel cards */
 .carousel-slide-next {
   animation: carousel-slide-next 0.45s ease-out;
 }
@@ -134,7 +130,39 @@ body {
   }
 }
 
-/* Modal description scrollbar - match dark/blue theme */
+/* Hide big PARTNERSHIP heading when modal is open */
+body.modal-open .partnership-main-heading {
+  opacity: 1;
+  z-index: 10; /* Ensure the heading is visible but below modal */
+}
+
+/* Background content (carousel, partnerships) */
+body.modal-open .partnership-section,
+body.modal-open .partner-cards {
+  filter: blur(4px); /* Apply a blur effect to the background content */
+  z-index: 5; /* Lower z-index to ensure the modal appears above it */
+  pointer-events: none; /* Prevent interaction with the background content */
+}
+
+/* Modal background overlay (semi-transparent) */
+body.modal-open .modal-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  z-index: 9999; /* Ensure the modal overlay stays on top */
+}
+
+/* Modal content */
+body.modal-open .modal-content {
+  z-index: 10000; /* Ensure the modal content stays on top */
+}
+
+/* Carousel (background content) when modal is open */
+body.modal-open .carousel {
+  filter: blur(10px); /* Blur carousel when modal is open */
+  z-index: 8; /* Keep it below the modal */
+}
+
+/* Modal description scrollbar */
 .modal-scroll {
   scrollbar-width: thin;
   scrollbar-color: var(--color-light-blue) rgba(8, 11, 20, 0.95);
@@ -166,4 +194,3 @@ body {
     rgba(130, 165, 220, 0.98)
   );
 }
-
