@@ -28,7 +28,9 @@ export default async function ProjectDetailsPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const groupName = id;
+
+  // Decode URL-encoded route segments (e.g. "AgriTech%20Pioneers" -> "AgriTech Pioneers")
+  const groupName = decodeURIComponent(id);
   const normalized = normalizeGroupName(groupName);
 
   const resolved: ThesisEntry | undefined = normalized

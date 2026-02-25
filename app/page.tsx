@@ -201,10 +201,10 @@ function StellarShowcaseSection() {
         {/* Mobile Layout (vertical stack) */}
         <div className="relative flex flex-col items-center justify-center lg:hidden">
           {/* Globe + attached glow wrapper */}
-          <div className="relative flex items-center justify-center w-85 h-85">
+          <div className="relative flex items-center justify-center w-[340px] h-[340px]">
             {/* Glow: always centered behind the globe */}
             <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-              <div className="h-105 w-105 rounded-full blur-3xl bg-blue-900/30" />
+              <div className="h-[420px] w-[420px] rounded-full blur-3xl bg-blue-900/30" />
             </div>
 
             {/* Globe */}
@@ -310,11 +310,9 @@ function StellarShowcaseSection() {
 
             {/* More Details button (below card) */}
             <div className="mt-20">
-              {activeThesis?.avp ? (
-                <a
-                  href={activeThesis.avp}
-                  target="_blank"
-                  rel="noreferrer"
+              {activeThesis ? (
+                <Link
+                  href={`/projects/${encodeURIComponent(activeThesis.groupName)}`}
                   className="group relative px-8 py-4 flex items-center justify-center
                     bg-linear-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40
                     border-2 border-blue-400/50 rounded-lg
@@ -327,7 +325,7 @@ function StellarShowcaseSection() {
                   <span className="font-stalinist-one text-base text-white drop-shadow-[0_0_10px_rgba(59,130,246,0.8)] group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,1)]">
                     More Details
                   </span>
-                </a>
+                </Link>
               ) : (
                 <div
                   className="relative px-8 py-4 flex items-center justify-center opacity-50 cursor-not-allowed
@@ -380,11 +378,9 @@ function StellarShowcaseSection() {
 
             {/* More Details button (below card) */}
             <div className="mt-20">
-              {activeThesis?.avp ? (
-                <a
-                  href={activeThesis.avp}
-                  target="_blank"
-                  rel="noreferrer"
+              {activeThesis ? (
+                <Link
+                  href={`/projects/${encodeURIComponent(activeThesis.groupName)}`}
                   className="group relative px-8 py-4 flex items-center justify-center
                     bg-linear-to-r from-blue-900/40 via-purple-900/40 to-blue-900/40
                     border-2 border-blue-400/50 rounded-lg
@@ -397,7 +393,7 @@ function StellarShowcaseSection() {
                   <span className="font-stalinist-one text-base text-white drop-shadow-[0_0_10px_rgba(59,130,246,0.8)] group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,1)]">
                     More Details
                   </span>
-                </a>
+                </Link>
               ) : (
                 <div
                   className="relative px-8 py-4 flex items-center justify-center opacity-50 cursor-not-allowed
@@ -415,10 +411,10 @@ function StellarShowcaseSection() {
           {/* CENTER: Globe + Ring */}
           <div className="flex flex-col items-center">
             {/* Globe + attached glow wrapper */}
-            <div className="relative flex items-center justify-center w-95 h-95">
+            <div className="relative flex items-center justify-center w-[380px] h-[380px]">
               {/* Glow: always centered behind the globe */}
               <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                <div className="h-105 w-105 rounded-full blur-3xl bg-blue-900/30" />
+                <div className="h-[420px] w-[420px] rounded-full blur-3xl bg-blue-900/30" />
               </div>
 
               {/* Globe */}
