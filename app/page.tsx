@@ -300,23 +300,29 @@ function StellarShowcaseSection() {
 
               {/* Details */}
               <div className="absolute top-24 w-[320px] px-4 text-center">
-                <p className="font-stalinist-one text-base text-white/90">
+                <p className="font-stalinist-one text-sm text-white/90 line-clamp-2 leading-snug">
                   {activeThesis?.thesisTitle ?? "Select a thesis"}
                 </p>
-                <p className="mt-2 font-space-mono text-sm text-white/70">
+                <p className="mt-2 font-space-mono text-[11px] text-white/70">
                   <span className="text-white/80">Group:</span>{" "}
                   {activeThesis?.groupName ?? "—"}
                 </p>
-                <p className="mt-1 font-space-mono text-sm text-white/70">
+                <p className="mt-1 font-space-mono text-[11px] text-white/70">
                   <span className="text-white/80">Mentor:</span>{" "}
                   {activeThesis?.mentor ?? "—"}
                 </p>
-                <p className="mt-1 font-space-mono text-sm text-white/70">
+                <p className="mt-1 font-space-mono text-[11px] text-white/70">
                   <span className="text-white/80">Members:</span>{" "}
                   {activeThesis?.members?.length
                     ? activeThesis.members.join(", ")
                     : "—"}
                 </p>
+
+                {activeThesis?.description ? (
+                  <p className="mt-3 font-space-mono text-[11px] text-white/70 line-clamp-3">
+                    {activeThesis.description}
+                  </p>
+                ) : null}
               </div>
             </div>
 
@@ -370,23 +376,29 @@ function StellarShowcaseSection() {
 
               {/* Details */}
               <div className="absolute top-24 w-[320px] px-4 text-center">
-                <p className="font-stalinist-one text-base text-white/90">
+                <p className="font-stalinist-one text-sm text-white/90 line-clamp-2 leading-snug">
                   {activeThesis?.thesisTitle ?? "Select a thesis"}
                 </p>
-                <p className="mt-2 font-space-mono text-sm text-white/70">
+                <p className="mt-2 font-space-mono text-[11px] text-white/70">
                   <span className="text-white/80">Group:</span>{" "}
                   {activeThesis?.groupName ?? "—"}
                 </p>
-                <p className="mt-1 font-space-mono text-sm text-white/70">
+                <p className="mt-1 font-space-mono text-[11px] text-white/70">
                   <span className="text-white/80">Mentor:</span>{" "}
                   {activeThesis?.mentor ?? "—"}
                 </p>
-                <p className="mt-1 font-space-mono text-sm text-white/70">
+                <p className="mt-1 font-space-mono text-[11px] text-white/70">
                   <span className="text-white/80">Members:</span>{" "}
                   {activeThesis?.members?.length
                     ? activeThesis.members.join(", ")
                     : "—"}
                 </p>
+
+                {activeThesis?.description ? (
+                  <p className="mt-3 font-space-mono text-[11px] text-white/70 line-clamp-3">
+                    {activeThesis.description}
+                  </p>
+                ) : null}
               </div>
             </div>
 

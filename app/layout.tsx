@@ -43,6 +43,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "CS Expo 2025 2.0",
   description: "Charting The Echoes Of Discovery Beyond The Cosmos",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

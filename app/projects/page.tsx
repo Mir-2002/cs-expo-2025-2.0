@@ -118,14 +118,19 @@ export default function Page() {
                       fill
                       className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.05]"
                     />
-                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-primary-black/60" />
+                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-primary-black/70" />
 
                     {/* Title */}
                     <div className="absolute bottom-0 left-0 right-0 p-4">
-                      <p className="font-stalinist-one text-sm lg:text-base text-off-white drop-shadow-[0_0_10px_rgba(59,130,246,0.55)]">
-                        {t.thesisTitle}
-                      </p>
-                      <p className="mt-1 font-space-mono text-xs text-off-white/75">
+                      <div className="min-h-[3.75rem]">
+                        <p
+                          className="font-stalinist-one text-xs sm:text-sm lg:text-sm text-off-white text-center
+                          drop-shadow-[0_0_10px_rgba(59,130,246,0.55)] line-clamp-2 leading-snug"
+                        >
+                          {t.thesisTitle}
+                        </p>
+                      </div>
+                      <p className="mt-1 font-space-mono text-[11px] text-off-white/75 text-center truncate">
                         {t.groupName}
                       </p>
                     </div>

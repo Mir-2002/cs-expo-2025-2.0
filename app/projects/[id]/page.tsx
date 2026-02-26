@@ -1,7 +1,11 @@
+"use client";
+
 import Section from "@/components/ui/Section";
 import Image from "next/image";
 import Link from "next/link";
 import { theses, type ThesisEntry } from "@/lib/theses";
+import { useMemo, useState } from "react";
+import React from "react";
 
 function normalizeGroupName(value: unknown) {
   if (typeof value !== "string") return "";
@@ -22,20 +26,42 @@ function toDriveEmbedUrl(url: string) {
   return `https://drive.google.com/file/d/${fileId}/preview`;
 }
 
-export default async function ProjectDetailsPage({
+function normalizeUrl(value: unknown) {
+  if (typeof value !== "string") return "";
+  return value.trim();
+}
+
+function MediaFallback({ label }: { label: string }) {
+  return (
+    <div className="flex items-center justify-center rounded-xl border border-white/10 bg-primary-black/35 p-6 text-center">
+      <p className="font-space-mono text-xs text-off-white/75">{label}</p>
+    </div>
+  );
+}
+
+export default function ProjectDetailsPage({
   params,
 }: {
   params: Promise<{ id: string }>;
 }) {
-  const { id } = await params;
+  const { id } = React.use(params);
 
   // Decode URL-encoded route segments (e.g. "AgriTech%20Pioneers" -> "AgriTech Pioneers")
   const groupName = decodeURIComponent(id);
   const normalized = normalizeGroupName(groupName);
 
-  const resolved: ThesisEntry | undefined = normalized
-    ? theses.find((t) => normalizeGroupName(t.groupName) === normalized)
-    : undefined;
+  const resolved: ThesisEntry | undefined = useMemo(() => {
+    return normalized
+      ? theses.find((t) => normalizeGroupName(t.groupName) === normalized)
+      : undefined;
+  }, [normalized]);
+
+  const avpUrl = normalizeUrl(resolved?.avp);
+  const driveEmbed = avpUrl ? toDriveEmbedUrl(avpUrl) : null;
+
+  const [mainImageFailed, setMainImageFailed] = useState(false);
+  const [thumbFailed, setThumbFailed] = useState<Record<number, boolean>>({});
+  const [videoFailed, setVideoFailed] = useState(false);
 
   if (!resolved) {
     return (
@@ -65,7 +91,7 @@ export default async function ProjectDetailsPage({
     ? resolved.images
     : ["/sample picture(event)/sample1.jpg"];
 
-  const driveEmbed = resolved.avp ? toDriveEmbedUrl(resolved.avp) : null;
+  const showMainImage = !mainImageFailed && Boolean(images[0]);
 
   return (
     <div className="w-full min-h-screen flex flex-col bg-[url('/images/backgrounds/EVENT_BG_2.jpg')] bg-cover bg-center">
@@ -84,34 +110,55 @@ export default async function ProjectDetailsPage({
               {/* Main image */}
               <div className="relative overflow-hidden rounded-xl border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.35)]">
                 <div className="relative h-72 w-full lg:h-105">
-                  <Image
-                    src={images[0]}
-                    alt={resolved.thesisTitle}
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-primary-black/60" />
+                  {showMainImage ? (
+                    <>
+                      <Image
+                        src={images[0]}
+                        alt={resolved.thesisTitle}
+                        fill
+                        className="object-cover"
+                        onError={() => setMainImageFailed(true)}
+                      />
+                      <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-primary-black/60" />
+                    </>
+                  ) : (
+                    <div className="absolute inset-0 p-4">
+                      <MediaFallback label="Image unavailable." />
+                    </div>
+                  )}
                 </div>
               </div>
 
               {/* Image strip (show all images) */}
               {images.length > 1 ? (
                 <div className="grid grid-cols-4 gap-3">
-                  {images.slice(0, 8).map((src, idx) => (
-                    <div
-                      key={`${src}-${idx}`}
-                      className="relative overflow-hidden rounded-lg border border-white/10"
-                    >
-                      <div className="relative aspect-square">
-                        <Image
-                          src={src}
-                          alt={`${resolved.thesisTitle} image ${idx + 1}`}
-                          fill
-                          className="object-cover"
-                        />
+                  {images.slice(0, 8).map((src, idx) => {
+                    const failed = Boolean(thumbFailed[idx]);
+                    return (
+                      <div
+                        key={`${src}-${idx}`}
+                        className="relative overflow-hidden rounded-lg border border-white/10"
+                      >
+                        <div className="relative aspect-square">
+                          {!failed ? (
+                            <Image
+                              src={src}
+                              alt={`${resolved.thesisTitle} image ${idx + 1}`}
+                              fill
+                              className="object-cover"
+                              onError={() =>
+                                setThumbFailed((prev) => ({ ...prev, [idx]: true }))
+                              }
+                            />
+                          ) : (
+                            <div className="absolute inset-0 p-2">
+                              <MediaFallback label="Image unavailable." />
+                            </div>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               ) : null}
 
@@ -133,9 +180,9 @@ export default async function ProjectDetailsPage({
                   <h2 className="font-audiowide text-off-white text-sm tracking-wider">
                     AVP
                   </h2>
-                  {resolved.avp ? (
+                  {avpUrl ? (
                     <a
-                      href={resolved.avp}
+                      href={avpUrl}
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center justify-center rounded-md border border-blue-400/45 px-3 py-1.5
@@ -147,8 +194,20 @@ export default async function ProjectDetailsPage({
                   ) : null}
                 </div>
 
-                {resolved.avp ? (
-                  driveEmbed ? (
+                {!avpUrl ? (
+                  <div className="mt-3 rounded-lg border border-white/10 bg-primary-black/30 p-3">
+                    <p className="font-space-mono text-xs text-off-white/75">
+                      Video unavailable.
+                    </p>
+                  </div>
+                ) : driveEmbed ? (
+                  videoFailed ? (
+                    <div className="mt-3 rounded-lg border border-white/10 bg-primary-black/30 p-3">
+                      <p className="font-space-mono text-xs text-off-white/75">
+                        Video failed to load.
+                      </p>
+                    </div>
+                  ) : (
                     <div className="mt-3 relative w-full overflow-hidden rounded-lg border border-white/10">
                       <div className="relative aspect-video">
                         <iframe
@@ -157,23 +216,15 @@ export default async function ProjectDetailsPage({
                           allow="autoplay; encrypted-media"
                           allowFullScreen
                           title={`${resolved.groupName} AVP`}
+                          onError={() => setVideoFailed(true)}
                         />
                       </div>
-                      <p className="mt-2 font-space-mono text-[11px] text-off-white/70">
-                        If the embed is blocked, make sure the Google Drive video
-                        is shared as “Anyone with the link can view”.
-                      </p>
                     </div>
-                  ) : (
-                    <p className="mt-3 font-space-mono text-xs text-off-white/75">
-                      AVP link set, but it doesn’t look like a Google Drive video
-                      URL that can be embedded. It will open in a new tab.
-                    </p>
                   )
                 ) : (
                   <div className="mt-3 rounded-lg border border-white/10 bg-primary-black/30 p-3">
                     <p className="font-space-mono text-xs text-off-white/75">
-                      AVP coming soon.
+                      Video unavailable.
                     </p>
                   </div>
                 )}
@@ -196,7 +247,7 @@ export default async function ProjectDetailsPage({
             >
               <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent" />
 
-              <h1 className="font-stalinist-one text-xl lg:text-2xl text-off-white">
+              <h1 className="font-stalinist-one text-xl lg:text-2xl text-off-white leading-snug">
                 {resolved.thesisTitle}
               </h1>
               <p className="mt-2 font-audiowide text-light-blue text-base">
@@ -217,6 +268,17 @@ export default async function ProjectDetailsPage({
                   {resolved.members?.length ? resolved.members.join(", ") : "—"}
                 </p>
               </div>
+
+              {resolved.description ? (
+                <div className="mt-5">
+                  <h2 className="font-audiowide text-off-white text-sm tracking-wider">
+                    Description
+                  </h2>
+                  <p className="mt-2 font-space-mono text-xs lg:text-sm text-off-white/80 leading-relaxed">
+                    {resolved.description}
+                  </p>
+                </div>
+              ) : null}
 
               <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent" />
             </div>
