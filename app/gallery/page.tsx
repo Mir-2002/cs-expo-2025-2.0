@@ -1,6 +1,5 @@
 import Section from "@/components/ui/Section";
 import Image from "next/image";
-import { galleryImages } from "@/data/galleryImages";
 
 function HeroSection() {
   return (
