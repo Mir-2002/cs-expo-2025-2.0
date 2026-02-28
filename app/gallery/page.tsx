@@ -61,10 +61,7 @@ export default function GalleryPage() {
     <main>
       <HeroSection />
         <div
-          className="relative"
-          style={{
-            backgroundColor: "#000",
-          }}
+          className="relative bg-primary-black"
         >
         <UpperGallerySection />
         <LowerGallerySection />
