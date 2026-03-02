@@ -26,9 +26,8 @@ export default function Page() {
       <Section className="flex flex-col px-6 py-8 lg:px-10 lg:py-10 items-center justify-center gap-4">
         <h1 className="text-3xl font-stalinist-one lg:text-4xl">PROJECTS</h1>
         <p className="text-center font-space-mono text-sm lg:w-1/2">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id totam eos
-          sint accusantium perspiciatis inventore beatae dignissimos maxime
-          similique molestiae ducimus voluptate, minus a architecto! Doloribus.
+          Explore the innovative projects from our talented students, showcasing
+          their creativity and technical skills across various categories.
         </p>
 
         {/* Category toggler */}
@@ -118,21 +117,24 @@ export default function Page() {
                       fill
                       className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.05]"
                     />
-                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-primary-black/70" />
+                    {/* Stronger overlay to ensure text is readable even on light covers */}
+                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-primary-black/85" />
 
                     {/* Title */}
                     <div className="absolute bottom-0 left-0 right-0 p-4">
-                      <div className="min-h-[3.75rem]">
-                        <p
-                          className="font-stalinist-one text-xs sm:text-sm lg:text-sm text-off-white text-center
-                          drop-shadow-[0_0_10px_rgba(59,130,246,0.55)] line-clamp-2 leading-snug"
-                        >
-                          {t.thesisTitle}
+                      <div className="rounded-md bg-primary-black/35 backdrop-blur-[2px] px-3 py-2">
+                        <div className="min-h-[3.75rem]">
+                          <p
+                            className="font-stalinist-one text-xs sm:text-sm lg:text-sm text-off-white text-center
+                          drop-shadow-[0_0_12px_rgba(0,0,0,0.9)] line-clamp-2 leading-snug"
+                          >
+                            {t.thesisTitle}
+                          </p>
+                        </div>
+                        <p className="mt-1 font-space-mono text-[11px] text-off-white/80 text-center truncate drop-shadow-[0_0_10px_rgba(0,0,0,0.85)]">
+                          {t.groupName}
                         </p>
                       </div>
-                      <p className="mt-1 font-space-mono text-[11px] text-off-white/75 text-center truncate">
-                        {t.groupName}
-                      </p>
                     </div>
                   </div>
 
