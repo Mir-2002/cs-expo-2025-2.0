@@ -5,57 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useMemo, useState } from "react";
 import { theses, type ThesisEntry } from "@/lib/theses";
+import {
+  committees,
+  type CommitteeKey,
+  type CommitteePerson,
+} from "@/lib/committees";
 
-// --- Committees data (fill in head/members when available) ---
-
-type CommitteeKey =
-  | "Project Head"
-  | "Documentations"
-  | "Marketing"
-  | "Programs"
-  | "Finance"
-  | "Externals"
-  | "Logistics"
-  | "Technicals"
-  | "Developers"
-  | "Sponsorship"
-  | "Partnership"
-  | "Speakership";
-
-type CommitteePerson = {
-  name: string;
-  image?: string | null;
-  role?: string | null;
-};
-
-type CommitteeRoster = {
-  key: CommitteeKey;
-  head?: CommitteePerson | null;
-  members?: CommitteePerson[];
-};
-
-const COMMITTEES: CommitteeRoster[] = [
-  {
-    key: "Project Head",
-    head: {
-      name: "Camposano, Shane Therize F.",
-      image: "/images/1.png",
-      role: "Project Head",
-    },
-    members: [],
-  },
-  { key: "Documentations", head: null, members: [] },
-  { key: "Marketing", head: null, members: [] },
-  { key: "Programs", head: null, members: [] },
-  { key: "Finance", head: null, members: [] },
-  { key: "Externals", head: null, members: [] },
-  { key: "Logistics", head: null, members: [] },
-  { key: "Technicals", head: null, members: [] },
-  { key: "Developers", head: null, members: [] },
-  { key: "Sponsorship", head: null, members: [] },
-  { key: "Partnership", head: null, members: [] },
-  { key: "Speakership", head: null, members: [] },
-];
+// --- Committees data (JSON-backed) ---
 
 function PersonCard({
   person,
@@ -69,17 +25,17 @@ function PersonCard({
   return (
     <div
       className={
-        "relative flex items-center gap-3 overflow-hidden rounded-xl border border-white/10 bg-white/5 p-3 " +
+        // Horizontal card
+        "relative flex items-center gap-4 overflow-hidden rounded-xl border border-white/10 bg-white/5 p-4 " +
         "shadow-[0_10px_40px_rgba(0,0,0,0.18)]"
       }
     >
       <div
         className={
           "relative shrink-0 overflow-hidden rounded-lg border border-white/10 bg-primary-black/30 " +
-          // Portrait-friendly sizing (taller than wide)
           (variant === "head"
-            ? "h-24 w-20 sm:h-28 sm:w-20"
-            : "h-20 w-16 sm:h-24 sm:w-20")
+            ? "h-20 w-16 sm:h-24 sm:w-20"
+            : "h-18 w-14 sm:h-20 sm:w-16")
         }
       >
         <Image
@@ -99,12 +55,12 @@ function PersonCard({
         </div>
       </div>
 
-      <div className="min-w-0">
-        <p className="font-space-mono text-sm text-off-white truncate">
+      <div className="min-w-0 flex-1">
+        <p className="font-space-mono text-base text-off-white leading-snug line-clamp-2">
           {person.name}
         </p>
         {person.role ? (
-          <p className="mt-0.5 font-space-mono text-[11px] text-off-white/60 truncate">
+          <p className="mt-1 font-space-mono text-xs text-off-white/60 leading-snug line-clamp-2">
             {person.role}
           </p>
         ) : null}
@@ -114,11 +70,15 @@ function PersonCard({
 }
 
 function CommitteesSection() {
-  const [activeKey, setActiveKey] = useState<CommitteeKey>("Project Head");
+  const COMMITTEES = committees;
+
+  const [activeKey, setActiveKey] = useState<CommitteeKey>(
+    COMMITTEES[0]?.key ?? "Project Head"
+  );
 
   const active = useMemo(
     () => COMMITTEES.find((c) => c.key === activeKey) ?? COMMITTEES[0],
-    [activeKey]
+    [activeKey, COMMITTEES]
   );
 
   const head = active?.head ?? null;
@@ -134,12 +94,14 @@ function CommitteesSection() {
           The Crew of CS Expo 2025 2.0
         </p>
 
+        {/* Selector on the left, details on the right (lg+) */}
         <div className="mt-10 grid gap-6 lg:grid-cols-[360px_1fr]">
           {/* Committee list */}
           <div className="rounded-2xl border border-white/10 bg-primary-black/35 p-4 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
             <p className="mb-3 font-audiowide text-xs tracking-widest text-off-white/80">
               COMMITTEES
             </p>
+            {/* Taller list on lg is OK since details is the scrollable side */}
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-1">
               {COMMITTEES.map((c) => {
                 const isActive = c.key === activeKey;
@@ -169,11 +131,12 @@ function CommitteesSection() {
           <div className="rounded-2xl border border-white/10 bg-primary-black/35 p-5 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
             <div className="flex flex-col gap-1">
               <h3 className="font-stalinist-one text-lg lg:text-xl text-off-white wrap-break-word">
-                {active.key}
+                {active?.key ?? ""}
               </h3>
             </div>
 
-            <div className="mt-5 grid gap-5 lg:grid-cols-2">
+            {/* Stack head + members vertically (only members scroll) */}
+            <div className="mt-5 grid gap-5">
               <div className="rounded-xl border border-white/10 bg-white/5 p-4">
                 <p className="font-audiowide text-[11px] tracking-widest text-off-white/70">
                   COMMITTEE HEAD
@@ -193,11 +156,14 @@ function CommitteesSection() {
                 <p className="font-audiowide text-[11px] tracking-widest text-off-white/70">
                   MEMBERS
                 </p>
+
                 {members.length ? (
-                  <div className="mt-2 grid gap-2 sm:grid-cols-2">
-                    {members.map((m) => (
-                      <PersonCard key={m.name} person={m} variant="member" />
-                    ))}
+                  <div className="mt-2 max-h-[55vh] overflow-auto pr-1 no-scrollbar">
+                    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-2">
+                      {members.map((m) => (
+                        <PersonCard key={m.name} person={m} variant="member" />
+                      ))}
+                    </div>
                   </div>
                 ) : (
                   <p className="mt-2 font-space-mono text-sm text-off-white/60">

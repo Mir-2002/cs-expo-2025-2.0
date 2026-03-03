@@ -1,0 +1,273 @@
+[
+  {
+    "key": "Project Head",
+    "head": {
+      "name": "Camposano, Shane Therize F.",
+      "image": null,
+      "role": "Project Head"
+    },
+    "members": []
+  },
+  {
+    "key": "Externals",
+    "head": {
+      "name": "Sabater, Jommel",
+      "image": null,
+      "role": "Head"
+    },
+    "members": [
+      {
+        "name": "Lunet, Faith Catherine M.",
+        "image": null,
+        "role": "Partnerships"
+      },
+      {
+        "name": "Leal, John Matthew J.",
+        "image": null,
+        "role": "Partnerships"
+      },
+      {
+        "name": "LEGASPI, Reyger Ivan S.",
+        "image": null,
+        "role": "Partnerships"
+      },
+      {
+        "name": "Carig, Eduard Nowee SJ.",
+        "image": null,
+        "role": "Partnerships"
+      },
+      { "name": "Cultivo, Austin D.", "image": null, "role": "Sponsorships" },
+      {
+        "name": "Calalo, Jason Russell M.",
+        "image": null,
+        "role": "Sponsorships"
+      },
+      {
+        "name": "Torres, Therese Frances T.",
+        "image": null,
+        "role": "Sponsorships"
+      },
+      {
+        "name": "Gumatay, Marithe Francesca",
+        "image": null,
+        "role": "Sponsorships"
+      },
+      { "name": "Reyes, Khentaro C.", "image": null, "role": "Sponsorships" },
+      {
+        "name": "Villegas, Shann Kristopher P.",
+        "image": null,
+        "role": "Sponsorships"
+      },
+      { "name": "Singson, Trinity M.", "image": null, "role": "Speakerships" },
+      {
+        "name": "Flores, Adrian Miguel R.",
+        "image": null,
+        "role": "Speakerships"
+      },
+      {
+        "name": "Caroliño, John Patrick V.",
+        "image": null,
+        "role": "Speakerships"
+      },
+      { "name": "Tinio, Jabenn P.", "image": null, "role": "Speakerships" },
+      { "name": "Perez, Justin Gabriel", "image": null, "role": "Speakerships" }
+    ]
+  },
+  {
+    "key": "Marketing",
+    "head": {
+      "name": "Medrano, Melandro Mozart C.",
+      "image": null,
+      "role": "Head"
+    },
+    "members": [
+      { "name": "Gamboa, Emmanuel T.", "image": null, "role": "Publicity" },
+      {
+        "name": "Matos, Michael Angelo M.",
+        "image": null,
+        "role": "Publicity"
+      },
+      { "name": "Victoria, Vea Vannez D.", "image": null, "role": "Creatives" },
+      { "name": "Garcia, Rion Seatiel L.", "image": null, "role": "Creatives" },
+      {
+        "name": "Bedaña, Lenin Marx Adolf O.",
+        "image": null,
+        "role": "Creatives"
+      },
+      { "name": "Ordoñez, Jeannina B.", "image": null, "role": "Creatives" },
+      {
+        "name": "Salamigman, Crystal Dioune P.",
+        "image": null,
+        "role": "Creatives, Media"
+      },
+      {
+        "name": "Camposano, Shane Therize F.",
+        "image": null,
+        "role": "Creativesz"
+      },
+      {
+        "name": "Arquiza, Andrea A.",
+        "image": null,
+        "role": "Creatives, Media"
+      },
+      { "name": "Ferranculo, Cedric Aaron C.", "image": null, "role": "Media" },
+      { "name": "CABELIN, JULLIAN KIEN R.", "image": null, "role": "Media" },
+      {
+        "name": "Medrano, Melandro Mozart C.",
+        "image": null,
+        "role": "Publications"
+      },
+      {
+        "name": "Macarajg, Kendrick L.",
+        "image": null,
+        "role": "Publications"
+      },
+      {
+        "name": "De Vera, Jamie Marie R.",
+        "image": null,
+        "role": "Publications"
+      },
+      {
+        "name": "Santos, Carlo Miguel D.",
+        "image": null,
+        "role": "Publications"
+      },
+      { "name": "Dalisay, Simon C.", "image": null, "role": "Publications" }
+    ]
+  },
+  {
+    "key": "Programs",
+    "head": {
+      "name": "Yago, Lyka",
+      "image": null,
+      "role": "Head"
+    },
+    "members": [
+      { "name": "Servando, Rabindranath A.", "image": null, "role": "Member" },
+      { "name": "Dela Cruz, Kyle Sebastian", "image": null, "role": "Member" },
+      { "name": "Fornaci, Jannah Marie", "image": null, "role": "Member" },
+      { "name": "Nate, Nikka C.", "image": null, "role": "Member" },
+      { "name": "Manio, Miguel Christian M.", "image": null, "role": "Member" },
+      { "name": "Garcia, John Vincent", "image": null, "role": "Member" },
+      { "name": "Estrella, Darwin Jared O.", "image": null, "role": "Member" },
+      { "name": "Andor, Carl", "image": null, "role": "Member" }
+    ]
+  },
+  {
+    "key": "Technicals",
+    "head": {
+      "name": "Salces, Ysrael",
+      "image": null,
+      "role": "Head"
+    },
+    "members": [
+      {
+        "name": "Salces, Christian Ysrael J.",
+        "image": null,
+        "role": "Member"
+      },
+      { "name": "Jordan, Earl David A.", "image": null, "role": "Member" },
+      { "name": "Abraham, Vince Joshua M.", "image": null, "role": "Member" },
+      {
+        "name": "Celestial, Jaime Gabriel J.",
+        "image": null,
+        "role": "Member"
+      },
+      { "name": "Carlos, Kurt Lewins Carlos", "image": null, "role": "Member" },
+      { "name": "Capulong, Ariel Timothy T.", "image": null, "role": "Member" }
+    ]
+  },
+  {
+    "key": "Finance",
+    "head": {
+      "name": "Ordoñez, Jeannina B.",
+      "image": null,
+      "role": "Head"
+    },
+    "members": [
+      { "name": "Evangelista, Edrian R.", "image": null, "role": "Member" },
+      { "name": "Dusaran, Ken Jervic A.", "image": null, "role": "Member" },
+      {
+        "name": "Candaza, Miguel Lawrence O.",
+        "image": null,
+        "role": "Member"
+      },
+      { "name": "Victoria, Vea Vannez D.", "image": null, "role": "Member" }
+    ]
+  },
+  {
+    "key": "Developers",
+    "head": {
+      "name": "Paz, Aaron Philip G.",
+      "image": null,
+      "role": "Head"
+    },
+    "members": [
+      {
+        "name": "Macasindel, Ahmer Nassif O.",
+        "image": null,
+        "role": "Member"
+      },
+      { "name": "Clemente, Gian Ily P.", "image": null, "role": "Member" },
+      { "name": "Masido, Michael Ivan M.", "image": null, "role": "Member" },
+      { "name": "Piscasio, Chino G.", "image": null, "role": "Member" },
+      { "name": "Delica, Andrei Z.", "image": null, "role": "Member" },
+      {
+        "name": "Galsim, Christian Kenneth B.",
+        "image": null,
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "key": "Documentation",
+    "head": {
+      "name": "De Vera, Jamie Marie R.",
+      "image": null,
+      "role": "Head"
+    },
+    "members": [
+      { "name": "Rivera, Dana Francheska L.", "image": null, "role": "Member" },
+      {
+        "name": "Nepomuceno, Daniel Joseph F.",
+        "image": null,
+        "role": "Member"
+      },
+      { "name": "Tandoc, Justine E.", "image": null, "role": "Member" },
+      { "name": "Pacis, Joaquin L.", "image": null, "role": "Member" },
+      { "name": "Apdua, Johans Cedric A.", "image": null, "role": "Member" },
+      {
+        "name": "Tombibang, Margaret Anne C.",
+        "image": null,
+        "role": "Member"
+      },
+      { "name": "Corsino, Rezin Cris, S.", "image": null, "role": "Member" },
+      { "name": "Umali, Shiela Marie P.", "image": null, "role": "Member" },
+      { "name": "Delica, John Andrei Z.", "image": null, "role": "Member" },
+      { "name": "Reyes, Allerone M.", "image": null, "role": "Member" }
+    ]
+  },
+  {
+    "key": "Logistics",
+    "head": {
+      "name": "Nate, Jignesh F.",
+      "image": null,
+      "role": "Head"
+    },
+    "members": [
+      { "name": "Adornado, Marc Denzyl C.", "image": null, "role": "Member" },
+      { "name": "Villon, Gabriel Sigfred T.", "image": null, "role": "Member" },
+      { "name": "Fabian, Jenny D.", "image": null, "role": "Member" },
+      { "name": "Al Sabeh, Fares R.", "image": null, "role": "Member" },
+      { "name": "Del Mundo, Dirk Adolf S.", "image": null, "role": "Member" },
+      { "name": "Cabalonga, Sean Ylac N.", "image": null, "role": "Member" },
+      {
+        "name": "Peralta, Adrienne Dwayne G.",
+        "image": null,
+        "role": "Member"
+      },
+      { "name": "Quieng, Jesryl Martin D.", "image": null, "role": "Member" },
+      { "name": "Amores, John Michael", "image": null, "role": "Member" }
+    ]
+  }
+]

@@ -24,7 +24,7 @@ function HeroSection() {
         <h1 className="font-audiowide font-bold text-4xl lg:text-6xl xl:text-7xl tracking-wider text-off-white mb-6">
           PARTNERSHIP
         </h1>
-        <p className="max-w-3xl text-xs sm:text-sm lg:text-base text-white leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+        <p className="font-space-mono max-w-3xl text-xs sm:text-sm lg:text-base text-white leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
           Those who helped CS Expo 2025 made the event possible through their
           support, collaboration, and commitment to showcasing innovation,
           unlocking the full potential of the event.
@@ -67,4 +67,3 @@ export default function PartnershipPage() {
     </main>
   );
 }
- 

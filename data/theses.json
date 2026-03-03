@@ -12,7 +12,7 @@
     "category": ["Machine Learning", "Smart Agriculture"],
     "description": "This study addresses the lack of simple and accessible tools for soil analysis, crop rotation, and companion planting, especially for small-scale and beginner farmers. Titled “Farmulate: Optimizing Crop Rotation and Companion Planting Through Machine Learning and Image Processing Algorithms Based on Soil Analysis,” it aims to help users choose suitable crops and planting strategies using machine learning and image processing. Designed for farmers, agricultural practitioners, and learners, the system analyzes soil images and sensor-based nutrient data to identify soil type and recommend appropriate crops and companion plants. It is expected to improve soil health, increase crop yield, and reduce the need for expensive laboratory soil testing, contributing to more sustainable and data-driven farming practices.",
     "avp": "https://drive.google.com/file/d/1Yf4NXI1TpUTibilzoEYWUse7GEL9AkJO/view?usp=sharing",
-    "poster": "/posters/Bandwitt.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772518782/BandWitt_wc3zks.png",
     "expo_category": ["agriculture", "machine learning"]
   },
   {
@@ -53,7 +53,7 @@
     ],
     "description": "The study addresses the need for appliance‑level energy monitoring to help users reduce unnecessary electricity consumption through third-party devices. The research “Smart Recommendation System for Electric Consumption on Appliance-Level Data With an Arduino-Based Device for Data Gathering Using LSTM Forecasting Algorithm” aims to forecast electric usage through LSTM algorithm and use it together with historical data through an Arduino-based device to provide energy‑saving suggestions with a recommendation system. Intended for households that uses electricity especially individuals seeking to monitor and optimize their energy use. Through data‑driven insights, the project contributes to sustainable energy management by offering a low‑cost, intelligent solution for appliance‑level monitoring and optimization.",
     "avp": "https://drive.google.com/file/d/1YIvkoXcGTYL6qpKGEZOCYPLwwnf6lwVA/view?usp=sharing",
-    "poster": "/posters/Phoenixcycle coders Poster.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772518783/Phoenixcycle_coders_Poster_z1f00q.png",
     "expo_category": ["machine learning"]
   },
   {
@@ -69,7 +69,7 @@
     "category": ["Machine Learning", "Android Applications"],
     "description": "This study addresses of overuse of screentime. Titled “ReFocus”, it aims to Lessen Screentime USe using Decision Tree and Locking Mechanisms. Designed to limit screentime overuse for android users, the system Records screentime and decides if the user overuse it. It is expected to Lock app specified by the user, contributing to Lessen Screentime and improve general focus and productivity.",
     "avp": "https://drive.google.com/file/d/1Tf0TxVuP2Wkpq2DvqxKVVDxmI1YByxh-/view?usp=sharing",
-    "poster": "/posters/AlgoOmega - Poster.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772518782/AlgoOmega_-_Poster_xwaczq.png",
     "expo_category": ["machine learning"]
   },
   {
@@ -101,7 +101,7 @@
     "category": ["Machine Learning", "Recommendation system"],
     "description": "This study addresses the problem of manual sales record-keeping and limited data-driven decision-making at OBM Furniture. Titled “Using Logistic Regression to Predict Popular Products from Historical Sales Data at OBM Furniture”, it aims to develop a web-based data analytics and predictive system that digitizes sales records, analyzes sales trends, and predicts popular products based on historical data. The system processes sales transactions and applies logistic regression to classify and forecast product demand. It is expected to provide a decision-support dashboard that presents summarized reports, trends, and predictive results, contributing to improved inventory planning, marketing strategies, and overall business decision-making.",
     "avp": "https://drive.google.com/file/d/1wDT10wdBIZY9nopV2JLA_zXfhohg6ot1/view?usp=sharing",
-    "poster": "/posters/VOID - Poster.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772518784/VOID_-_Poster_pq1bby.png",
     "expo_category": ["machine learning"]
   },
   {
@@ -117,7 +117,7 @@
     "category": ["Natural Language Processing & Large Language Model"],
     "description": "This study addresses the persistent challenge of manual documentation in software development by developing an automated system that leverages Abstract Syntax Trees (AST) for structural code parsing and Natural Language Processing (NLP) for semantic description generation. By integrating these technologies, the research provides a highly acceptable solution that improves documentation efficiency and accuracy, bridging the gap between raw Python source code and comprehensive technical manuals.",
     "avp": "https://drive.google.com/file/d/1mv495Ny5WH6WUxwWCn_19sdg-6Xlf3e6/view?usp=sharing",
-    "poster": "/posters/Exceptionals.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772518782/Exceptionals_bjeaz7.png",
     "expo_category": ["nlp"]
   },
   {
@@ -186,7 +186,7 @@
     ],
     "description": "This study addresses the hotspots or areas where heat is highly indicated around Valenzuela. Titled “INET: Identifying Networks of Elevated Temperatures for Urban Heat Island Hotspot Detection in Valenzuela City Using Satellite Imagery”, it aims to identify places of elevated temperatures in Valenzuela using satellite imagery. Designed for local government units (LGUs), urban planners, GIS analysts, and environmental officers, the system serves as a web-based visualization platform that integrates externally processed satellite-derived land surface temperature and spatial clustering results to detect and display urban heat island hotspots. It is expected to enhance localized urban heat monitoring and support data-driven planning and mitigation strategies, contributing to climate-resilient, sustainable urban development and evidence-based decision-making in Valenzuela City.",
     "avp": "https://drive.google.com/file/d/12W8OpOZAXMGeJn_Ae_dw3ebhcFsDN0YZ/view?usp=sharing",
-    "poster": "/posters/Techies.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772518783/Techies_sdl67g.png",
     "expo_category": ["machine learning"]
   },
   {
@@ -203,7 +203,7 @@
     "category": ["Intelligent Tutoring Systems", "LMS", "NLP", "Fine-Tuning"],
     "description": "This study addresses the need for an intelligent system that can auto grade Python code submissions efficiently and provide constructive feedback for improvement. Titled “CritiCheck: An Intelligent Tutoring System for Auto-Grading Python Code Using LoRA and QLoRA-Finetuned Language Models,” it aims to automate the evaluation of Python code submissions, integrating both rule-based and AI-driven evaluation mechanisms using LoRA and QLoRA fine-tuned models. Designed for educational institutions, software engineering programs, and online learning platforms, the system evaluates the logic, output, style, and other quality characteristics of Python code. It is expected to streamline the grading process, provide actionable feedback to learners, and enhance the learning experience. This contributes to the improvement of educational tools by utilizing AI to support efficient and objective grading, ensuring high-quality student engagement and outcomes.",
     "avp": "https://drive.google.com/file/d/1BAJ6zSdsLxpiXzMEiL_kK1lNlMqUypmL/view?usp=sharing",
-    "poster": "/posters/LockIn.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772518782/LockIn_w5abzd.png",
     "expo_category": ["education", "nlp", "machine learning"]
   },
   {
@@ -219,7 +219,7 @@
     "category": ["Natural Language Processing & Large Language Model"],
     "description": null,
     "avp": "https://drive.google.com/file/d/1cUkJlykX9UT8fSogQg1ceJKNRyZy9jzl/view?usp=sharing",
-    "poster": "/posters/Wonder Bros Poster.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772518784/Wonder_Bros_Poster_jgoobv.png",
     "expo_category": ["nlp"]
   },
   {
@@ -236,7 +236,7 @@
     "category": ["Machine Learning", "Computer Vision"],
     "description": "This study addresses the lack of systematic canine skin disease diagnosis in veterinary clinics due to limited manpower and time-consuming manual inspection. Titled \"Caniscan: Dog Skin Disease Detection and Diagnosing Program Using YOLOv8 and Llama 3.2 Treatment-Based Recommendation\", it aims to develop an automated diagnostic support system using YOLOv8 for real-time disease detection and Llama 3.2 for treatment recommendations. Designed for veterinarians, veterinary clinics, and pet owners, the system analyzes dog skin images to detect and classify four common conditions (allergic dermatitis, fungal infection, hot spots, and mange) with confidence-level predictions and AI-generated treatment guidance.",
     "avp": "https://drive.google.com/file/d/1gDiT2KmHkwD8v58mA0ZX518z-RPQZy4J/view?usp=sharing",
-    "poster": "/posters/Proxies.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772518783/Proxies_abjfxo.png",
     "expo_category": ["computer vision", "machine learning"]
   },
   {
@@ -252,7 +252,7 @@
     "category": ["Machine Learning", "Audio Classification", "Map Generation"],
     "description": null,
     "avp": "https://drive.google.com/file/d/121JK0IVR0dFTcGlD1XnmhniMVtALzUvR/view?usp=sharing",
-    "poster": "/posters/TECHMO Poster.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772518784/TECHMO_Poster_ny5ibb.png",
     "expo_category": ["machine learning"]
   },
   {
@@ -267,7 +267,7 @@
     "category": ["Machine Learning", "Recommendation System"],
     "description": "This study addresses inefficiencies in workforce allocation within construction companies, particularly the mismatch between worker skills and assigned tasks that leads to productivity loss and project delays. Titled “Optimizing Workforce Efficiency in Construction Companies Using an Intelligent Job Matching System,” it aims to optimize workforce deployment using a hybrid recommendation approach that integrates user profiling, content-based filtering, and collaborative filtering techniques. Designed for construction companies and project managers, the system automates job–worker matching based on skill compatibility and historical performance. It is expected to improve workforce utilization, reduce trade stacking, and minimize project delays, contributing to enhanced productivity and more efficient workforce management.",
     "avp": "https://drive.google.com/file/d/1o3UyNkiN-qmEWxn59wCGYc01_xQfbV_B/view?usp=sharing",
-    "poster": "/posters/Valv.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772518783/Valv_ha4kks.png",
     "expo_category": ["machine learning"]
   },
   {
@@ -284,7 +284,7 @@
     "category": ["Machine Learning", "Image Identifcation", "Audio Recogniton"],
     "description": "The study addresses the difficulties people have during birdwatching such as locating and identifying bird species. Titled \"Wingpedia\", it aims to create an android application that is able to assist and be accessible to a diverse range of users, utilize models such as YOLOv8 and CNNs, and examine its effectiveness. Designed for birdwatchers, the system identifies bird species using YOLOv8 image identification or CNNs audio recognition technology. It is expected to identify the species of the targeted contributing to enhance the birdwatching experience as well as to raise awareness and appreciation towards bird species in the country.",
     "avp": "https://drive.google.com/file/d/1th2Q4KdrGSp9b6zSWU3qvTOSKds458zM/view?usp=sharing",
-    "poster": "/posters/IPC - Poster.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772518782/IPC_-_Poster_lreyvr.png",
     "expo_category": ["computer vision", "machine learning"]
   },
   {
@@ -300,7 +300,7 @@
     "category": ["Encryption", "Cryptography", "Hashing"],
     "description": "This study addresses the problem of academic document tampering, unauthorized modification, and difficulty in verifying the authenticity of submitted assignments in digital submission environments. Titled “DocuTrack: A Web-Based Secure Academic Document Submission and Verification System using AES, RSA, and SHA-256”, it aims to develop a secure system that ensures the authenticity, integrity, and originality of academic documents using cryptographic techniques such as AES encryption, RSA digital signatures, and SHA-256 hashing. Designed for academic institutions, instructors, and students, the system securely issues personalized documents, verifies immutable signed headers, and detects tampering or duplication through answer-only hashing. It is expected to strengthen trust in digital academic submissions, reduce plagiarism and forgery, and contribute to improved security and reliability in academic document management systems.",
     "avp": "https://drive.google.com/file/d/1ZUzyIqXfMQM60r09STmDnPVlAlX0hIJT/view?usp=sharing",
-    "poster": "/posters/Superduperteam.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772518783/Superduperteam_nnfvka.png",
     "expo_category": ["machine learning"]
   },
   {
@@ -315,8 +315,8 @@
     "mentor": "Doc. Angelo Arguson",
     "category": ["Machine Learning & Data Science"],
     "description": "This study addresses the lack of guidance and decision support for beginner cryptocurrency traders, which often leads to impulsive and uninformed trading. Titled “CRYPTOGAUGE: A Decision Support System for Beginner Cryptocurrency Traders Using Sentiment Analysis and Topic Modeling”, it aims to improve trading confidence and decision-making using machine learning-based sentiment analysis, topic modeling, and data processing techniques. Designed for beginner cryptocurrency traders, the system analyzes real-time market-related data to provide intelligent insights and guidance. It is expected to enhance financial literacy, promote responsible trading behavior, and support digital financial innovation, contributing to SDG 4 (Quality Education), SDG 8 (Decent Work and Economic Growth), and SDG 9 (Industry, Innovation, and Infrastructure).",
-    "avp": "/posters/JADC - poster.png",
-    "poster": null,
+    "avp": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772518782/JADC_-_poster_dl12ya.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772519304/JADC_-_poster_xchuwx.png",
     "expo_category": ["machine learning"]
   }
 ]
