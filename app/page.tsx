@@ -5,7 +5,7 @@ import Section from "@/components/ui/Section";
 import DarkPlanet from "@/public/svg/dark-planet.svg";
 import Image from "next/image";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   categories,
   getThesesByCategory,
@@ -202,6 +202,10 @@ function StellarShowcaseSection() {
     thesesForCategory[0] ?? null
   );
 
+  useEffect(() => {
+    setActiveThesis(thesesForCategory[0] ?? null);
+  }, [thesesForCategory]);
+
   return (
     <Section className="relative bg-[url('/images/backgrounds/EVENT_BG_2.jpg')] bg-cover bg-center overflow-hidden">
       {/* Content */}
@@ -280,7 +284,7 @@ function StellarShowcaseSection() {
                   return;
                 }
                 const found = thesesForCategory.find(
-                  (t) => t.thesisTitle === item.title
+                  (t) => t.groupName === item.id
                 );
                 setActiveThesis(found ?? null);
               }}
@@ -537,7 +541,7 @@ function StellarShowcaseSection() {
                     return;
                   }
                   const found = thesesForCategory.find(
-                    (t) => t.thesisTitle === item.title
+                    (t) => t.groupName === item.id
                   );
                   setActiveThesis(found ?? null);
                 }}

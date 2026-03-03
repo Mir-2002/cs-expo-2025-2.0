@@ -33,7 +33,7 @@
     ],
     "description": "This study addresses the problem of inefficient parking search and route navigation in urban environments with limited real-time parking data. Titled “A Machine Learning Approach to Parking Systems with Bidirectional Search and A Algorithms for Optimized Pathfinding,”* it aims to recommend suitable parking areas and generate efficient routes using machine learning–based suitability ranking and graph-based pathfinding algorithms. Designed for urban drivers and parking system administrators, the system evaluates parking options based on distance, cost, safety, accessibility, and operating hours, while computing optimal routes using Bidirectional A*. It is expected to reduce parking search time, traffic congestion, and user decision effort, contributing to smarter, more sustainable urban mobility solutions.",
     "avp": "https://drive.google.com/file/d/1jryspphCU8ynGzYYeH3JOhufArsV1NKo/view?usp=sharing",
-    "poster": "/posters/3J+R - Poster.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772546275/3J_R_-_Poster_ash2oy.png",
     "expo_category": ["machine learning"]
   },
   {
@@ -84,7 +84,7 @@
     "category": ["Natural Language Processing", "Machine Learning"],
     "description": "This study addresses the difficulty in manually analyzing and quantifying large volumes of qualitative employee feedback to extract actionable organizational insights. Titled \"Kobo Sentiment Analyzer\", it aims to automate the evaluation of employee satisfaction and identifying key themes in questionnaire responses using Natural Language Processing (NLP) techniques including VADER for sentiment analysis and BERTopic for topic modeling. Designed for Human Resources (HR) departments and organizational managers, the system processes text-based feedback to visualize sentiment trends, correlations, and feature importance. It is expected to provide real-time, objective insights into workforce morale, contributing to data-driven decision-making for improving organizational culture and employee retention.",
     "avp": "https://drive.google.com/file/d/13XElute5F51QBf3QH0W5BXVQwREMtv9c/view?usp=sharing",
-    "poster": "/posters/KOBO - Poster.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772546349/KOBO_-_Poster_uvxe2r.png",
     "expo_category": ["nlp", "machine learning"]
   },
   {
@@ -133,7 +133,7 @@
     "category": ["Natural Laguage Processing", "Machine Learning"],
     "description": "This study addresses the significant speech articulation difficulties post-cleft surgery and the lack of personalized, real-time therapy. Titled “CLEFT2SPEECH: Phoneme-Level Speech Correction in Post-Cleft Palate Rehabilitation”, it aims to develop a web-based articulation correction system for patients using Transducer-ASR, Phoneme Mapping, and voice cloning technologies. Designed for patients and Speech-Language Pathologists (SLPs), the system processes speech, identifies misarticulated phonemes, and generates an intelligible, corrected audio sample in the patient's voice. It is expected to enhance speech clarity and provide real-time articulation modeling, contributing to better communication outcomes and expanding therapy access in underserved regions.",
     "avp": "https://drive.google.com/file/d/1SOOiJnY56SvQ46lkM9rrEt76pFmOg7vk/view?usp=sharing",
-    "poster": "/posters/Ctrl+C, Ctrl+V.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772546314/Ctrl_C_Ctrl_V_mmqo6g.png",
     "expo_category": ["nlp", "machine learning"]
   },
   {
@@ -149,7 +149,7 @@
     "category": ["Large Language Model & Natural Language Processing"],
     "description": "This study addresses the challenge of producing structured flashcards from medical-related text. Titled “Utilizing Optical Character Recognition and Natural Language Processing for Automated Digital Medical Term Flashcards within a Web-Based Platform,” it aims to assist pre-medical students in creating digital flashcards from medical learning materials using a language model and OCR for text extraction. The system accepts inputs in forms of images of text, plain text, Word, PDFs, and PowerPoint files, and generates formatted digital flashcards. It is expected to advance understanding of the viability of smaller models, demonstrating that very large models are not required for specific tasks, thereby contributing to research on the accessibility of language models.",
     "avp": "https://drive.google.com/file/d/1D2C1AByzdE3Zj5B7JSuf7x_9sq3M9Bih/view?usp=sharing",
-    "poster": "/posters/Fourward Thinkers.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772546383/Fourward_Thinkers_gn9aqm.png",
     "expo_category": ["nlp", "education"]
   },
   {
@@ -165,7 +165,7 @@
     "category": ["Computer Vision", "Machine Learning"],
     "description": "This study addresses the inefficiencies and guesswork involved in traditional packing methods, particularly in small-scale shipping, travel, and logistics scenarios. Titled “OptiPack: A LiDAR-Powered Packing Optimization Application Using 3D Scanning and Dynamic Programming,” it aims to improve packing accuracy and space utilization through advanced 3D scanning and optimization techniques. Designed for consumers and small logistics providers, the system uses LiDAR sensors on iPhone models 12 Pro and above to generate precise 3D object models and simulate their arrangement within containers. By applying a dynamic programming–based optimization algorithm, OptiPack suggests efficient packing configurations, reducing wasted space and packing time. The system is expected to enhance resource management, improve loading efficiency, and contribute to more streamlined and stress-free packing processes.",
     "avp": "https://drive.google.com/file/d/14THYWCNojmdGTYPtzVxkD8FvMLRZ620p/view?usp=sharing",
-    "poster": "/posters/Team-Differential.png",
+    "poster": "https://res.cloudinary.com/dx5zolzdq/image/upload/v1772546420/Team-Differential_awbgor.png",
     "expo_category": ["computer vision", "machine learning"]
   },
   {
