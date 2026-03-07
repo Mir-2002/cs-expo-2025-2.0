@@ -24,111 +24,91 @@ At RELX | Reed Elsevier Philippines, we value curiosity, innovation, teamwork, a
       instagramUrl: "https://www.instagram.com/reedelsevierphilippines",
       isPlaceholder: false,
     },
-    {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Co-Presenter",
-      label: "CO-PRESENTER",
-      title: "Coming Soon",
-      name: "Coming Soon",
-      description:
-        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
-    },
-    {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Co-Presenter",
-      label: "CO-PRESENTER",
-      title: "Coming Soon",
-      name: "Coming Soon",
-      description:
-        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
-    },
   ],
 
-  platinum: [
+  silver: [
     {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Platinum Sponsor",
-      label: "PLATINUM",
-      title: "Coming Soon",
-      name: "Coming Soon",
+      src: "/sponsor_logo/Silver/silver1.jpg",
+      alt: "Love Likha",
+      label: "SILVER",
+      title: "Love Likha",
+      name: "Love Likha",
       description:
-        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
+        "Love Likha is a community-focused maker collective showcasing creative craftsmanship through workshops and curated merchandise.",
+      isPlaceholder: false,
     },
     {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Platinum Sponsor",
-      label: "PLATINUM",
-      title: "Coming Soon",
-      name: "Coming Soon",
+      src: "/sponsor_logo/Silver/silver2.jpg",
+      alt: "Zagu",
+      label: "SILVER",
+      title: "Zagu",
+      name: "Zagu",
       description:
-        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
+        "Zagu is a popular beverage brand known for its chewy pearls and refreshing milk tea offerings.",
+      isPlaceholder: false,
     },
     {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Platinum Sponsor",
-      label: "PLATINUM",
-      title: "Coming Soon",
-      name: "Coming Soon",
+      src: "/sponsor_logo/Silver/silver3.jpg",
+      alt: "Tomoro Coffee",
+      label: "SILVER",
+      title: "Tomoro Coffee",
+      name: "Tomoro Coffee",
       description:
-        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
-    },
-    {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Platinum Sponsor",
-      label: "PLATINUM",
-      title: "Coming Soon",
-      name: "Coming Soon",
-      description:
-        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
+        "Tomoro Coffee is a specialty coffee brand that celebrates local flavors and community-driven experiences.",
+      isPlaceholder: false,
     },
   ],
 
   gold: [
     {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Gold Sponsor",
+      src: "/sponsor_logo/Gold/gold1.jpg",
+      alt: "Asia Trends Import & Export Corporation",
       label: "GOLD",
-      title: "Coming Soon",
-      name: "Coming Soon",
+      title: "Asia Trends Import & Export Corporation",
+      name: "Asia Trends Import & Export Corporation",
       description:
-        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
+        "Asia Trends Import & Export Corporation is a dynamic trading company specializing in diverse consumer products for the global market.",
+      isPlaceholder: false,
     },
     {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Gold Sponsor",
+      src: "/sponsor_logo/Gold/gold2.png",
+      alt: "POSCA",
       label: "GOLD",
-      title: "Coming Soon",
-      name: "Coming Soon",
+      title: "POSCA",
+      name: "POSCA",
       description:
-        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
+        "POSCA is a trusted maker of vibrant paint markers used by artists, students, and designers around the world.",
+      isPlaceholder: false,
     },
     {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Gold Sponsor",
+      src: "/sponsor_logo/Gold/gold3.png",
+      alt: "Uniball",
       label: "GOLD",
-      title: "Coming Soon",
-      name: "Coming Soon",
+      title: "Uniball",
+      name: "Uniball",
       description:
-        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
+        "Uniball produces high-quality pens and writing tools designed for precision, comfort, and reliability.",
+      isPlaceholder: false,
     },
     {
-      src: "/sponsor_logo/sponsor_sample.png",
-      alt: "Upcoming Gold Sponsor",
+      src: "/sponsor_logo/Gold/gold4.png",
+      alt: "Uni",
       label: "GOLD",
-      title: "Coming Soon",
-      name: "Coming Soon",
+      title: "Uni",
+      name: "Uni",
       description:
-        "This sponsorship slot is available. Be part of CS Expo 2025 and reach future tech leaders.",
-      isPlaceholder: true,
+        "Uni is a leading stationery brand known for innovative writing instruments and creative supplies.",
+      isPlaceholder: false,
+    },
+    {
+      src: "/sponsor_logo/Gold/gold5.png",
+      alt: "GitHub",
+      label: "GOLD",
+      title: "GitHub",
+      name: "GitHub",
+      description:
+        "GitHub is a platform for developers to host, review, and collaborate on code, powering teams worldwide.",
+      isPlaceholder: false,
     },
   ],
 
@@ -198,24 +178,24 @@ At RELX | Reed Elsevier Philippines, we value curiosity, innovation, teamwork, a
 
 const borderByTier: Record<SponsorTier, string> = {
   "co-presenter": "border-secondary-blue/50",
-  platinum: "border-off-white/40",
   gold: "border-amber-300/60",
+  silver: "border-slate-200/60",
   bronze: "border-amber-700/50",
 };
 
 const labelColorByTier: Record<SponsorTier, string> = {
   "co-presenter": "text-secondary-blue",
-  platinum: "text-off-white",
   gold: "text-amber-200",
+  silver: "text-slate-200",
   bronze: "text-amber-100",
 };
 
 const glowByTier: Record<SponsorTier, string> = {
   "co-presenter":
     "0 0 40px rgba(135,158,185,0.2), 0 0 80px rgba(168,197,224,0.1)",
-  platinum:
-    "0 0 40px rgba(200,220,240,0.15), 0 0 80px rgba(168,197,224,0.1)",
   gold: "0 0 40px rgba(251,191,36,0.15), 0 0 80px rgba(245,158,11,0.08)",
+  silver:
+    "0 0 40px rgba(226,232,240,0.15), 0 0 80px rgba(168,197,224,0.08)",
   bronze: "0 0 40px rgba(180,140,80,0.15), 0 0 80px rgba(205,127,50,0.08)",
 };
 
@@ -249,12 +229,14 @@ export default function SponsorshipSection() {
   );
 
   const goPrev = useCallback(() => {
+    if (totalCards <= 1) return;
     goTo(activeIndex - 1, "prev");
-  }, [activeIndex, goTo]);
+  }, [activeIndex, goTo, totalCards]);
 
   const goNext = useCallback(() => {
+    if (totalCards <= 1) return;
     goTo(activeIndex + 1, "next");
-  }, [activeIndex, goTo]);
+  }, [activeIndex, goTo, totalCards]);
 
   const handleCardClick = (sponsor: SponsorCard) => {
     setSelectedSponsor(sponsor);
@@ -265,12 +247,14 @@ export default function SponsorshipSection() {
   activeIndexRef.current = activeIndex;
 
   useEffect(() => {
+    if (totalCards <= 1) return;
+
     const timer = setInterval(() => {
       goTo(activeIndexRef.current + 1, "next");
     }, AUTO_ADVANCE_MS);
 
     return () => clearInterval(timer);
-  }, [goTo]);
+  }, [goTo, totalCards]);
 
   useEffect(() => {
     setActiveIndex(0);
@@ -290,51 +274,55 @@ export default function SponsorshipSection() {
       </div>
 
       <div className="relative w-full">
-        <button
-          type="button"
-          onClick={goPrev}
-          className="group absolute left-0 top-0 bottom-0 w-1/3 z-20 cursor-pointer"
-          aria-label="Previous sponsor"
-          onMouseEnter={(e) => {
-            e.currentTarget.style.background =
-              "linear-gradient(90deg, rgba(168,197,224,0.08) 0%, transparent 100%)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.background = "transparent";
-          }}
-        >
-          <div
-            className="absolute left-8 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full transition-all duration-500 opacity-0 group-hover:opacity-100"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(168,197,224,0.2) 0%, rgba(168,197,224,0.05) 50%, transparent 100%)",
-              boxShadow: "0 0 30px rgba(168,197,224,0.2)",
-            }}
-          />
-        </button>
+        {totalCards > 1 && (
+          <>
+            <button
+              type="button"
+              onClick={goPrev}
+              className="group absolute left-0 top-0 bottom-0 w-1/3 z-20 cursor-pointer"
+              aria-label="Previous sponsor"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background =
+                  "linear-gradient(90deg, rgba(168,197,224,0.08) 0%, transparent 100%)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "transparent";
+              }}
+            >
+              <div
+                className="absolute left-8 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full transition-all duration-500 opacity-0 group-hover:opacity-100"
+                style={{
+                  background:
+                    "radial-gradient(circle, rgba(168,197,224,0.2) 0%, rgba(168,197,224,0.05) 50%, transparent 100%)",
+                  boxShadow: "0 0 30px rgba(168,197,224,0.2)",
+                }}
+              />
+            </button>
 
-        <button
-          type="button"
-          onClick={goNext}
-          className="group absolute right-0 top-0 bottom-0 w-1/3 z-20 cursor-pointer"
-          aria-label="Next sponsor"
-          onMouseEnter={(e) => {
-            e.currentTarget.style.background =
-              "linear-gradient(270deg, rgba(168,197,224,0.08) 0%, transparent 100%)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.background = "transparent";
-          }}
-        >
-          <div
-            className="absolute right-8 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full transition-all duration-500 opacity-0 group-hover:opacity-100"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(168,197,224,0.2) 0%, rgba(168,197,224,0.05) 50%, transparent 100%)",
-              boxShadow: "0 0 30px rgba(168,197,224,0.2)",
-            }}
-          />
-        </button>
+            <button
+              type="button"
+              onClick={goNext}
+              className="group absolute right-0 top-0 bottom-0 w-1/3 z-20 cursor-pointer"
+              aria-label="Next sponsor"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background =
+                  "linear-gradient(270deg, rgba(168,197,224,0.08) 0%, transparent 100%)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "transparent";
+              }}
+            >
+              <div
+                className="absolute right-8 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full transition-all duration-500 opacity-0 group-hover:opacity-100"
+                style={{
+                  background:
+                    "radial-gradient(circle, rgba(168,197,224,0.2) 0%, rgba(168,197,224,0.05) 50%, transparent 100%)",
+                  boxShadow: "0 0 30px rgba(168,197,224,0.2)",
+                }}
+              />
+            </button>
+          </>
+        )}
 
         <div
           className="relative flex items-center justify-center py-10 overflow-hidden"
@@ -344,7 +332,7 @@ export default function SponsorshipSection() {
             minHeight: "500px",
           }}
         >
-          {[-2, -1, 0, 1, 2].map((displayOffset) => {
+          {(totalCards === 1 ? [0] : [-2, -1, 0, 1, 2]).map((displayOffset) => {
             const cardIndex =
               ((activeIndex + displayOffset) % totalCards + totalCards) %
               totalCards;

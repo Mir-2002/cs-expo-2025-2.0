@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState, useCallback } from "react";
+import { createPortal } from "react-dom";
 /** Shared card type for sponsor/partner modals */
 export type ModalCard = {
   src: string;
@@ -33,6 +34,7 @@ export default function SponsorModal({
 }: SponsorModalProps) {
   const [isExiting, setIsExiting] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [portalRoot, setPortalRoot] = useState<HTMLElement | null>(null);
 
   useEffect(() => {
     if (isOpen) {
@@ -43,6 +45,16 @@ export default function SponsorModal({
       setIsVisible(false);
     }
   }, [isOpen]);
+
+  useEffect(() => {
+    const div = document.createElement("div");
+    div.setAttribute("id", "sponsor-modal-portal");
+    document.body.appendChild(div);
+    setPortalRoot(div);
+    return () => {
+      document.body.removeChild(div);
+    };
+  }, []);
 
   useEffect(() => {
     if (isOpen) {
@@ -79,13 +91,13 @@ export default function SponsorModal({
 
   // Keep mounted during exit animation
   const shouldRender = isOpen || isExiting;
-  if (!shouldRender) return null;
+  if (!shouldRender || !portalRoot) return null;
 
   const hasLinks =
     sponsor.websiteUrl || sponsor.facebookUrl || sponsor.instagramUrl;
   const isPlaceholder = sponsor.isPlaceholder ?? false;
 
-  return (
+  const modalContent = (
     <div
       className="fixed inset-0 z-[9999] flex items-center justify-center p-4"
       style={{
@@ -255,4 +267,6 @@ export default function SponsorModal({
       </div>
     </div>
   );
+
+  return createPortal(modalContent, portalRoot);
 }
