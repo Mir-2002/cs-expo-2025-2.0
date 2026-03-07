@@ -2,17 +2,17 @@
 
 import { useState } from "react";
 
-export type SponsorTier = "co-presenter" | "platinum" | "gold" | "bronze";
+export type SponsorTier = "co-presenter" | "gold" | "silver" | "bronze";
 
 const TIER_LABELS: Record<SponsorTier, string> = {
   "co-presenter": "Co-Presenter",
-  platinum: "Platinum Sponsor",
   gold: "Gold Sponsor",
+  silver: "Silver Sponsor",
   bronze: "Bronze Sponsor",
 };
 
-// Hierarchy: Co-Presenter first, then Platinum, Gold, Bronze
-const TIER_ORDER: SponsorTier[] = ["co-presenter", "platinum", "gold", "bronze"];
+// Hierarchy: Co-Presenter first, then Gold, Silver, Bronze
+const TIER_ORDER: SponsorTier[] = ["co-presenter", "gold", "silver", "bronze"];
 
 function ChevronIcon({ direction }: { direction: "left" | "right" }) {
   return (

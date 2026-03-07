@@ -21,7 +21,7 @@ function HeroSection() {
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-primary-black z-[1]" />
 
       <div className="relative z-10 flex flex-col items-center text-center px-4">
-        <h1 className="font-audiowide font-bold text-4xl lg:text-6xl xl:text-7xl tracking-wider text-off-white mb-6">
+        <h1 className="font-space-mono font-bold text-4xl lg:text-6xl xl:text-7xl tracking-wider text-off-white mb-6">
           PARTNERSHIP
         </h1>
         <p className="font-space-mono max-w-3xl text-xs sm:text-sm lg:text-base text-white leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
