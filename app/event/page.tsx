@@ -155,7 +155,7 @@ function SpeakersSection1() {
 
           <div className="relative w-64 h-64 lg:w-80 lg:h-80 overflow-hidden">
             <Image
-              src="/sample picture(event)/sample1.jpg"
+              src="/sample picture(event)/placeholder_event.png"
               alt="Elon Musk"
               width={320}
               height={320}
@@ -190,7 +190,7 @@ function SpeakersSection1() {
           <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent mb-6" />
 
           <h2 className="font-audiowide text-xl lg:text-2xl text-light-blue mb-3 relative z-10">
-            Elon Musk
+            Coming Soon
           </h2>
 
           <div className="h-px w-16 bg-linear-to-r from-light-blue/60 to-transparent mb-4" />
@@ -200,10 +200,7 @@ function SpeakersSection1() {
           </p>
 
           <p className="text-xs lg:text-sm text-off-white/90 leading-relaxed relative z-10">
-            Elon Musk is a technology entrepreneur and innovator known for his
-            work in space exploration, electric vehicles, and advanced
-            engineering. His vision focuses on pushing humanity forward through
-            innovation, sustainability, and ambitious technological progress.
+               More information will be available soon. Stay tuned for updates!
           </p>
 
           <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent" />
