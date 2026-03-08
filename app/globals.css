@@ -1,11 +1,17 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: Bladerunner;
+  src: url("/fonts/BLADRMF_.TTF");
+}
+
 :root {
   --background: #0f1219;
   --foreground: #c0c0c0;
 }
 
 @theme {
+  --font-bladerunner: Bladerunner, "Space Mono";
   --font-stalinist-one: "Stalinist One", cursive;
   --font-racing-sans-one: "Racing Sans One", sans-serif;
   --font-space-mono: "Space Mono", monospace;
