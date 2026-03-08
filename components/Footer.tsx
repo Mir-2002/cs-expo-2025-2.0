@@ -73,7 +73,7 @@ export default function Footer() {
                 className="flex items-center gap-2 hover:text-dark-blue transition-colors duration-150"
               >
                 <Mail size={24} />
-                fit.csexpo@gmail.com
+                fit.csexpo
               </Link>
             </li>
             <li>
