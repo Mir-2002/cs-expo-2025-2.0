@@ -214,6 +214,15 @@ function SpeakersSection1() {
 }
 
 function SpeakersSection2() {
+  const cardStyle = {
+    background:
+      "linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%)",
+    backdropFilter: "blur(12px)",
+    border: "1px solid rgba(255,255,255,0.1)",
+    boxShadow:
+      "0 8px 32px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.05) inset, 0 0 40px rgba(100,150,255,0.1)",
+  };
+
   return (
     <Section className="relative flex flex-col items-center overflow-hidden">
       <div className="absolute left-0.5 top-1/2 -translate-y-1/2 z-0">
@@ -230,81 +239,122 @@ function SpeakersSection2() {
         SPEAKERS
       </h1>
 
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-start gap-8 lg:gap-10 mb-20">
-        <div
-          className="relative rounded-xl overflow-hidden"
-          style={{
-            background:
-              "linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%)",
-            backdropFilter: "blur(12px)",
-            border: "1px solid rgba(255,255,255,0.1)",
-            boxShadow:
-              "0 8px 32px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.05) inset, 0 0 40px rgba(100,150,255,0.1)",
-          }}
-        >
-          <div
-            className="absolute inset-0 rounded-xl"
-            style={{
-              boxShadow:
-                "inset 0 1px 2px rgba(255,255,255,0.1), 0 0 20px rgba(100,150,255,0.15)",
-              pointerEvents: "none",
-            }}
-          />
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-7 lg:px-8 flex flex-col gap-10 mb-20">
+        {/* First keynote (aligned to the right) */}
+        <div className="w-full flex justify-start -ml-4 lg:-ml-10">
+          <div className="flex w-full max-w-40xl items-center gap-6 lg:gap-8">
+            <div
+              className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-xl overflow-hidden"
+              style={{
+                boxShadow:
+                  "0 0 0 1px rgba(100,150,255,0.35), 0 0 30px rgba(100,150,255,0.2)",
+              }}
+            >
+              <Image
+                src="/speakers/Ms.%20Lois%20Laput.jpg"
+                alt="Lois Laput"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-primary-black/20" />
+            </div>
 
-          <div className="relative w-64 h-64 lg:w-80 lg:h-80 overflow-hidden">
-            <Image
-              src="/sample picture(event)/sample2.jpg"
-              alt="Francis Leo Marcos"
-              width={320}
-              height={320}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-primary-black/20" />
+            <div className="relative flex-1 rounded-xl p-6 lg:p-8" style={cardStyle}>
+              <div
+                className="absolute inset-0 rounded-xl"
+                style={{
+                  boxShadow:
+                    "inset 0 1px 2px rgba(255,255,255,0.1), 0 0 20px rgba(100,150,255,0.15)",
+                  pointerEvents: "none",
+                }}
+              />
+
+              <h2 className="font-audiowide text-xl lg:text-2xl text-light-blue mb-2 relative z-10">
+                Ms. Lois Laput
+              </h2>
+
+              <p className="font-audiowide text-sm lg:text-base text-dark-blue mb-1 uppercase tracking-wider relative z-10">
+                Co-founder of Gumdrop Lab
+              </p>
+
+              <p className="text-xs lg:text-sm text-off-white/80 mb-4 relative z-10">
+                9:55 to 10:20 AM
+              </p>
+
+              <p className="text-xs lg:text-sm text-off-white/90 leading-relaxed relative z-10">
+                Ms. Lois Laput is a Computer Engineering graduate from the
+                University of the Philippines. She started her career in R&D at
+                Nokia and later shifted her focus to building software for
+                founders and optimizing operational processes for business
+                owners. As co-founder of Gumdrop Lab, she has shipped over 40
+                production platforms, collaborated on 20 more, and gained
+                international experience in the US, UK, and EU. Her expertise
+                lies in translating complex business processes into scalable
+                systems for organizations.
+              </p>
+
+              <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent" />
+            </div>
           </div>
-
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent" />
         </div>
 
-        <div
-          className="relative flex-1 rounded-xl p-6 lg:p-8"
-          style={{
-            background:
-              "linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%)",
-            backdropFilter: "blur(12px)",
-            border: "1px solid rgba(255,255,255,0.1)",
-            boxShadow:
-              "0 8px 32px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.05) inset, 0 0 40px rgba(100,150,255,0.1)",
-          }}
-        >
-          <div
-            className="absolute inset-0 rounded-xl"
-            style={{
-              boxShadow:
-                "inset 0 1px 2px rgba(255,255,255,0.1), 0 0 20px rgba(100,150,255,0.15)",
-              pointerEvents: "none",
-            }}
-          />
+        {/* Second keynote (aligned to the left) */}
+        <div className="w-full flex justify-start pl-6 lg:pl-10 ms-40">
+          <div className="flex w-full max-w-44xl items-center gap-6 lg:gap-8">
+            <div
+              className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-xl overflow-hidden"
+              style={{
+                boxShadow:
+                  "0 0 0 1px rgba(100,150,255,0.35), 0 0 30px rgba(100,150,255,0.2)",
+              }}
+            >
+              <Image
+                src="/speakers/Mr.%20Ian%20Panoncillo.png"
+                alt="Ian Panoncillo"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-primary-black/20" />
+            </div>
 
-          <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent mb-6" />
+            <div className="relative flex-1 rounded-xl p-6 lg:p-8" style={cardStyle}>
+              <div
+                className="absolute inset-0 rounded-xl"
+                style={{
+                  boxShadow:
+                    "inset 0 1px 2px rgba(255,255,255,0.1), 0 0 20px rgba(100,150,255,0.15)",
+                  pointerEvents: "none",
+                }}
+              />
 
-          <h2 className="font-audiowide text-xl lg:text-2xl text-light-blue mb-3 relative z-10">
-            Francis Leo Marcos
-          </h2>
+              <h2 className="font-audiowide text-xl lg:text-2xl text-light-blue mb-2 relative z-10">
+                Mr. Ian Panoncillo
+              </h2>
 
-          <div className="h-px w-16 bg-linear-to-r from-light-blue/60 to-transparent mb-4" />
+              <p className="font-audiowide text-sm lg:text-base text-dark-blue mb-1 uppercase tracking-wider relative z-10">
+                Head of Technology &amp; Modernisation, GSI
+              </p>
 
-          <p className="font-audiowide text-sm lg:text-base text-dark-blue mb-6 uppercase tracking-wider relative z-10">
-            Guest Speaker
-          </p>
+              <p className="text-xs lg:text-sm text-off-white/80 mb-4 relative z-10">
+                11:00 to 11:25 AM
+              </p>
 
-          <p className="text-xs lg:text-sm text-off-white/90 leading-relaxed relative z-10">
-            Francis Leo &quot;Kulaong&quot; Marcos is recognized for his
-            leadership and public engagement initiatives, inspiring communities
-            through advocacy, communication, and social impact programs aimed at
-            empowering people and encouraging positive change.
-          </p>
+              <p className="text-xs lg:text-sm text-off-white/90 leading-relaxed relative z-10">
+                Ian Panoncillo brings more than 15 years of experience in IT
+                operations, infrastructure, enterprise platforms, and technology
+                leadership. Starting his career in BPO as a customer service
+                agent, he transitioned to IT in 2010. Now, as Head of Technology
+                and Modernisation at GSI, he oversees cloud services,
+                cybersecurity, IT governance, and modernization. Ian has been
+                pivotal in establishing GSI’s Microsoft 365 environment,
+                implementing ISO/IEC 27001 frameworks, and developing BE.bot,
+                an internal AI knowledge assistant. His approach is focused on
+                simplicity, security, scalability, and the responsible use of AI.
+              </p>
 
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent" />
+            </div>
+          </div>
         </div>
       </div>
     </Section>
