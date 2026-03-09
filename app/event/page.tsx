@@ -132,9 +132,9 @@ function SpeakersSection1() {
         SPEAKERS
       </h1>
 
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-start gap-8 lg:gap-10 mb-20">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-stretch lg:items-start gap-6 lg:gap-10 mb-20">
         <div
-          className="relative rounded-xl overflow-hidden"
+          className="relative rounded-xl overflow-hidden w-full max-w-sm mx-auto lg:mx-0 lg:w-auto"
           style={{
             background:
               "linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%)",
@@ -153,13 +153,13 @@ function SpeakersSection1() {
             }}
           />
 
-          <div className="relative w-64 h-64 lg:w-80 lg:h-80 overflow-hidden">
+          <div className="relative w-full aspect-square lg:w-80 lg:h-80 overflow-hidden">
             <Image
               src="/sample picture(event)/placeholder_event.png"
               alt="Elon Musk"
-              width={320}
-              height={320}
-              className="w-full h-full object-cover"
+              fill
+              sizes="(max-width: 1024px) 90vw, 320px"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-primary-black/20" />
           </div>
@@ -168,7 +168,7 @@ function SpeakersSection1() {
         </div>
 
         <div
-          className="relative flex-1 rounded-xl p-6 lg:p-8"
+          className="relative flex-1 rounded-xl p-5 sm:p-6 lg:p-8"
           style={{
             background:
               "linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%)",
@@ -187,7 +187,7 @@ function SpeakersSection1() {
             }}
           />
 
-          <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent mb-6" />
+          <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent" />
 
           <h2 className="font-audiowide text-xl lg:text-2xl text-light-blue mb-3 relative z-10">
             Coming Soon
@@ -195,12 +195,12 @@ function SpeakersSection1() {
 
           <div className="h-px w-16 bg-linear-to-r from-light-blue/60 to-transparent mb-4" />
 
-          <p className="font-audiowide text-sm lg:text-base text-dark-blue mb-6 uppercase tracking-wider relative z-10">
+          <p className="font-audiowide text-xs sm:text-sm lg:text-base text-dark-blue mb-4 lg:mb-6 uppercase tracking-wider relative z-10">
             Guest Speaker
           </p>
 
           <p className="text-xs lg:text-sm text-off-white/90 leading-relaxed relative z-10">
-               More information will be available soon. Stay tuned for updates!
+            More information will be available soon. Stay tuned for updates!
           </p>
 
           <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-light-blue/40 to-transparent" />
@@ -236,12 +236,12 @@ function SpeakersSection2() {
         SPEAKERS
       </h1>
 
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-7 lg:px-8 flex flex-col gap-10 mb-20">
-        {/* First keynote (aligned to the right) */}
-        <div className="w-full flex justify-start -ml-4 lg:-ml-10">
-          <div className="flex w-full max-w-40xl items-center gap-6 lg:gap-8">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-7 lg:px-8 flex flex-col gap-10 mb-20">
+        {/* First keynote */}
+        <div className="w-full">
+          <div className="flex w-full flex-col lg:flex-row items-stretch lg:items-center gap-6 lg:gap-8">
             <div
-              className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-xl overflow-hidden"
+              className="relative w-full max-w-sm mx-auto lg:mx-0 lg:w-80 aspect-square rounded-xl overflow-hidden"
               style={{
                 boxShadow:
                   "0 0 0 1px rgba(100,150,255,0.35), 0 0 30px rgba(100,150,255,0.2)",
@@ -256,7 +256,7 @@ function SpeakersSection2() {
               <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-primary-black/20" />
             </div>
 
-            <div className="relative flex-1 rounded-xl p-6 lg:p-8" style={cardStyle}>
+            <div className="relative flex-1 rounded-xl p-5 sm:p-6 lg:p-8" style={cardStyle}>
               <div
                 className="absolute inset-0 rounded-xl"
                 style={{
@@ -270,7 +270,7 @@ function SpeakersSection2() {
                 Ms. Lois Laput
               </h2>
 
-              <p className="font-audiowide text-sm lg:text-base text-dark-blue mb-1 uppercase tracking-wider relative z-10">
+              <p className="font-audiowide text-xs sm:text-sm lg:text-base text-dark-blue mb-1 uppercase tracking-wider relative z-10">
                 Co-founder of Gumdrop Lab
               </p>
 
@@ -280,7 +280,7 @@ function SpeakersSection2() {
 
               <p className="text-xs lg:text-sm text-off-white/90 leading-relaxed relative z-10">
                 Ms. Lois Laput is a Computer Engineering graduate from the
-                University of the Philippines. She started her career in R&D at
+                University of the Philippines. She started her career in R&amp;D at
                 Nokia and later shifted her focus to building software for
                 founders and optimizing operational processes for business
                 owners. As co-founder of Gumdrop Lab, she has shipped over 40
@@ -295,11 +295,11 @@ function SpeakersSection2() {
           </div>
         </div>
 
-        {/* Second keynote (aligned to the left) */}
-        <div className="w-full flex justify-start pl-6 lg:pl-10 ms-40">
-          <div className="flex w-full max-w-44xl items-center gap-6 lg:gap-8">
+        {/* Second keynote */}
+        <div className="w-full">
+          <div className="flex w-full flex-col lg:flex-row-reverse items-stretch lg:items-center gap-6 lg:gap-8">
             <div
-              className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-xl overflow-hidden"
+              className="relative w-full max-w-sm mx-auto lg:mx-0 lg:w-80 aspect-square rounded-xl overflow-hidden"
               style={{
                 boxShadow:
                   "0 0 0 1px rgba(100,150,255,0.35), 0 0 30px rgba(100,150,255,0.2)",
@@ -314,7 +314,7 @@ function SpeakersSection2() {
               <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-primary-black/20" />
             </div>
 
-            <div className="relative flex-1 rounded-xl p-6 lg:p-8" style={cardStyle}>
+            <div className="relative flex-1 rounded-xl p-5 sm:p-6 lg:p-8" style={cardStyle}>
               <div
                 className="absolute inset-0 rounded-xl"
                 style={{
@@ -328,7 +328,7 @@ function SpeakersSection2() {
                 Mr. Ian Panoncillo
               </h2>
 
-              <p className="font-audiowide text-sm lg:text-base text-dark-blue mb-1 uppercase tracking-wider relative z-10">
+              <p className="font-audiowide text-xs sm:text-sm lg:text-base text-dark-blue mb-1 uppercase tracking-wider relative z-10">
                 Head of Technology &amp; Modernisation, GSI
               </p>
 
