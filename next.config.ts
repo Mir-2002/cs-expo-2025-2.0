@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
         pathname: "/**",
       },
     ],
+    unoptimized: true,
   },
   async redirects() {
     return [
@@ -20,6 +21,7 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  output: "export",
 };
 
 export default nextConfig;
